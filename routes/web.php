@@ -23,8 +23,12 @@ Route::view('/admin', 'admin.dashboard');
 
 Route::view('/tabel', 'admin.user');
 
-Route::view('/home', 'home.home');
+Route::view('/landing', 'landing.landing');
+
+//LOGIN
 
 Auth::routes();
+
+Route::view('/home', 'home');
 
 Route::get('admin/home', [App\Http\Controllers\HomeController::class, 'index'])->name('admin.home')->middleware('is_admin');
