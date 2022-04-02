@@ -17,13 +17,18 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+//admin
 Route::view('/template', 'template.v_template');
 
 Route::view('/admin', 'admin.dashboard');
 
 Route::view('/tabel', 'admin.user');
 
+//masyarakat umum
 Route::view('/landing', 'landing.landing');
+
+//user
+Route::view('/user_view', 'user_view.home_user');
 
 //LOGIN
 

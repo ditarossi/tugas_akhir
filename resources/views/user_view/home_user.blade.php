@@ -66,7 +66,24 @@ https://templatemo.com/tm-570-chain-app-dev
               <li class="scroll-to-section"><a href="#services">Visi Misi</a></li>
               <!--<li class="scroll-to-section"><a href="#pricing">Struktur Organisasi</a></li>-->
               <li class="scroll-to-section"><a href="#pricing">Wisata</a></li>
-              <li><div class="gradient-button"><a id="modal_trigger" href="#modal"><i class="fa fa-sign-in-alt"></i> Sign In Now</a></div></li> 
+              <li class="scroll-to-section"><a href="#">Pemesanan</a></li>
+              <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    User
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
+                                </div>
+                            </li>
             </ul>        
             <a class='menu-trigger'>
                 <span>Menu</span>
@@ -179,10 +196,10 @@ https://templatemo.com/tm-570-chain-app-dev
                   </div>
                   <div class="col-lg-12">
                     <div class="white-button first-button scroll-to-section">
-                      <a href="#contact">Free Quote <i class="fab fa-instagram"></i></a>
+                      <a href="#contact">Free Quote <i class="fab fa-apple"></i></a>
                     </div>
                     <div class="white-button scroll-to-section">
-                      <a href="#contact">Free Quote <i class="fab fa-whatsapp"></i></a>
+                      <a href="#contact">Free Quote <i class="fab fa-google-play"></i></a>
                     </div>
                   </div>
                 </div>
