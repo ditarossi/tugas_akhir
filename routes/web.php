@@ -25,10 +25,14 @@ Route::view('/admin', 'admin.dashboard');
 Route::view('/tabel', 'admin.user');
 
 //masyarakat umum
-Route::view('/landing', 'landing.landing');
+Route::view('/landing', 'landing.isi');
+Route::view('/sejarah', 'landing.sejarah');
+Route::view('/struktur', 'landing.struktur');
+Route::view('/komunitas', 'landing.komunitas');
+Route::view('/kerjasama', 'landing.kerjasama');
 
 //user
-Route::view('/user_view', 'user_view.home_user');
+Route::view('/user_view', 'user_view.isi');
 
 //LOGIN
 
