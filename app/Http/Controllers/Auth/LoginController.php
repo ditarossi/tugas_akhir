@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
+use Auth;
 
 class LoginController extends Controller
 {
@@ -49,12 +50,20 @@ class LoginController extends Controller
         if(auth()->attempt(array('email' => $input['email'], 'password' => $input['password'])))
         {
             if(auth()->user()->is_admin == 1){
-                return redirect()->route('admin.home');
+                return redirect()->route('admin');
             } else {
-                return redirect()->route('home');
+                return redirect()->route('user_view');
             }
         } else {
             return redirect()->route('login')->with('error','email dan password salah');
         }
     }
+
+    public function logout(Request $request) {
+        Auth::logout();
+        return redirect('/login');
+      }
 }
+
+//1. admin.home -> admin.dashboard
+//2. homw -> user_view

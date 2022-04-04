@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,9 +20,7 @@ Route::get('/', function () {
 
 //admin
 Route::view('/template', 'template.v_template');
-
 Route::view('/admin', 'admin.dashboard');
-
 Route::view('/tabel', 'admin.user');
 
 //masyarakat umum
@@ -39,9 +38,12 @@ Route::view('/komunitas', 'user_view.komunitas');
 Route::view('/kerjasama', 'user_view.kerjasama');
 
 //LOGIN
-
 Auth::routes();
+//Route::view('user_view', 'user_view.isi');
+Route::get('admin', [App\Http\Controllers\HomeController::class, 'admin'])->name('admin')->middleware('is_admin');
+Route::get('user_view', [App\Http\Controllers\HomeController::class, 'index'])->name('user_view');
+//1. admin/home -> admin
+//2. admin.home -> admin.dashboard
 
-Route::view('/home', 'home');
-
-Route::get('admin/home', [App\Http\Controllers\HomeController::class, 'index'])->name('admin.home')->middleware('is_admin');
+//LOGOUT
+Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');

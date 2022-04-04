@@ -20,6 +20,9 @@ class IsAdmin
             return $next($request);
         }
         //return $next($request);
-        return redirect('home')->with('error', 'Anda Tidak Dapat Mengakses Halaman Ini');
+        return redirect('user_view')->with('error', 'Anda Tidak Dapat Mengakses Halaman Ini');
     }
 }
+
+//1. home -> user_view.isi
+//. 
