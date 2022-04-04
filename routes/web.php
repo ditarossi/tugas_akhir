@@ -33,6 +33,10 @@ Route::view('/kerjasama', 'landing.kerjasama');
 
 //user
 Route::view('/user_view', 'user_view.isi');
+Route::view('/sejarah', 'user_view.sejarah');
+Route::view('/struktur', 'user_view.struktur');
+Route::view('/komunitas', 'user_view.komunitas');
+Route::view('/kerjasama', 'user_view.kerjasama');
 
 //LOGIN
 

@@ -54,7 +54,7 @@
             <h4>Sejarah</h4>
             <p>You are not allowed to redistribute this template ZIP file on any other website.</p>
             <div class="text-button">
-              <a href="#">Read More <i class="fa fa-arrow-right"></i></a>
+              <a href="/sejarah">Read More <i class="fa fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -64,7 +64,7 @@
             <h4>Struktur Organisasi</h4>
             <p>You are allowed to use the Chain App Dev HTML template. Feel free to modify or edit this layout.</p>
             <div class="text-button">
-              <a href="#">Read More <i class="fa fa-arrow-right"></i></a>
+              <a href="/struktur">Read More <i class="fa fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -74,7 +74,7 @@
             <h4>Komunitas</h4>
             <p>If this template is beneficial for your work, please support us <a rel="nofollow" href="https://paypal.me/templatemo" target="_blank">a little via PayPal</a>. Thank you.</p>
             <div class="text-button">
-              <a href="#">Read More <i class="fa fa-arrow-right"></i></a>
+              <a href="/komunitas">Read More <i class="fa fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -84,7 +84,7 @@
             <h4>Kerjasama</h4>
             <p>Lorem ipsum dolor consectetur adipiscing elit sedder williamsburg photo booth quinoa and fashion axe.</p>
             <div class="text-button">
-              <a href="#">Read More <i class="fa fa-arrow-right"></i></a>
+              <a href="/kerjasama">Read More <i class="fa fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -462,4 +462,18 @@
       </div>
     </div>
   </div> 
+
+  <div id="order" class="order-form">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="section-heading" align="center">
+            <h4>Pemesanan Wisata</h4>
+            <img src="{{asset('layout')}}/assets/images/heading-line-dec.png" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eismod tempor incididunt ut labore et dolore magna.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   @endsection
