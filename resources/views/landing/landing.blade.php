@@ -86,7 +86,7 @@ https://templatemo.com/tm-570-chain-app-dev
 
         <!-- Username & Password Login form -->
         <div class="user_login">
-            <form>
+            <form >
                 <label>Email / Username</label>
                 <input type="text" />
                 <br />
