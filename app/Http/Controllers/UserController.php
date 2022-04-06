@@ -41,7 +41,14 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $model = new User;
+        $model->name = $request->name;
+        $model->email = $request->email;
+        $model->password = bcrypt($request->password);
+        $model->is_admin = $request->is_admin;
+        $model->save();
+
+        return redirect('tbl_user');
     }
 
     /**

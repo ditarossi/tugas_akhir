@@ -32,7 +32,7 @@
               <div class="row">
                 <div class="col-12"></div>
                   <div class="table-responsive">
-                  <button class="btn btn-outline-success" href="{{ url('user/create') }}">Tambah Data</button>
+                  <a class="btn btn-outline-success" href="{{ url('tbl_user/create') }}">Tambah Data</a>
                     <br>
                     <br>
                     <table id="order-listing" class="table">
