@@ -7,7 +7,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/tabel_user">
+            <a class="nav-link" href="/tbl_user">
               <i class="icon-user"></i>
               <span class="menu-title">Tabel User</span>
             </a>
