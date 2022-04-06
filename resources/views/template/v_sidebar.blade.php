@@ -84,7 +84,7 @@
 
               <ul class="menu-sub">
                 <li class="menu-item">
-                  <a href="/tabel" class="menu-link">
+                  <a href="/user" class="menu-link">
                     <div data-i18n="Without menu">User</div>
                   </a>
                 </li>

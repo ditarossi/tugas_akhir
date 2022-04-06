@@ -28,7 +28,7 @@ class HomeController extends Controller
 
     public function admin()
     {
-        return view('admin.dashboard');
+        return view('admin2.isi');
     }
 }
 

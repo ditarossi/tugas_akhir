@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\User;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,6 +23,11 @@ Route::get('/', function () {
 Route::view('/template', 'template.v_template');
 Route::view('/admin', 'admin.dashboard');
 Route::view('/tabel', 'admin.user');
+
+//admin2
+Route::view('/template2', 'admin2.isi');
+Route::view('/admin2', 'admin2.isi');
+Route::view('/tabel_user', 'admin2.tabel_user');
 
 //masyarakat umum
 Route::view('/landing', 'landing.isi');
@@ -47,3 +53,6 @@ Route::get('user_view', [App\Http\Controllers\HomeController::class, 'index'])->
 
 //LOGOUT
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
+
+//DataTables
+Route::get('/user', [User::class, 'index']);
