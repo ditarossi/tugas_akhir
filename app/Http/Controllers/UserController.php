@@ -15,7 +15,7 @@ class UserController extends Controller
     public function index()
     {
         $datas = User::all();
-        return view('admin2.tabel_user', compact(
+        return view('admin2.user.tabel_user', compact(
             'datas'
         ));
     }
@@ -28,7 +28,7 @@ class UserController extends Controller
     public function create()
     {
         $model = new User;
-        return view('admin2.create_user', compact(
+        return view('admin2.user.create_user', compact(
             'model'
         ));
     }
@@ -70,7 +70,10 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-        //
+        $model = User::find($id);
+        return view('admin2.user.update_user', compact(
+            'model'
+        ));
     }
 
     /**
@@ -82,7 +85,14 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $model = User::find($id);
+        $model->name = $request->name;
+        $model->email = $request->email;
+        $model->password = bcrypt($request->password);
+        $model->is_admin = $request->is_admin;
+        $model->save();
+
+        return redirect('tbl_user');
     }
 
     /**
@@ -93,6 +103,8 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $model = User::find($id);
+        $model->delete();
+        return redirect('tbl_user');
     }
 }

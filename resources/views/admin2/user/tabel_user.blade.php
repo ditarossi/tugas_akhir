@@ -53,8 +53,12 @@
                             <td>{{ $value->password }}</td>
                             <td>{{ $value->is_admin }}</td>
                             <td>
-                              <button class="btn btn-outline-warning">Change</button>
-                              <button class="btn btn-outline-danger">Delete</button>
+                              <a class="btn btn-outline-warning" href="{{ url('tbl_user/'.$value->id.'/edit') }}">Update</a>
+                              <form action="{{ url('tbl_user/'.$value->id) }}" method="post">
+                                @csrf 
+                                <input type="hidden" name="_method" value="delete">
+                                <button class="btn btn-outline-danger" type="submit">Delete</button>
+                              </form>
                             </td>
                         </tr>
                         @endforeach
