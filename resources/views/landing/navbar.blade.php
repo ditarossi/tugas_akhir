@@ -2,6 +2,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
+        
           <nav class="main-nav">
             <!-- ***** Logo Start ***** -->
             <a href="index.html" class="logo">
@@ -16,12 +17,13 @@
               <!--<li class="scroll-to-section"><a href="#pricing">Struktur Organisasi</a></li>-->
               <li class="scroll-to-section"><a href="#pricing">Wisata</a></li>
               <li><div class="gradient-button"><a id="modal_trigger" href="#modal"><i class="fa fa-sign-in-alt"></i> Sign In Now</a></div></li> 
-            </ul>        
+            </ul>       
             <a class='menu-trigger'>
                 <span>Menu</span>
             </a>
             <!-- ***** Menu End ***** -->
           </nav>
+         
         </div>
       </div>
     </div>

@@ -88,21 +88,21 @@ https://templatemo.com/tm-570-chain-app-dev
         <div class="user_login">
             <form >
                 <label>Email / Username</label>
-                <input type="text" />
+                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus/>
                 <br />
 
                 <label>Password</label>
-                <input type="password" />
+                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password"/>
                 <br />
 
                 <div class="checkbox">
-                    <input id="remember" type="checkbox" />
+                    <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}/>
                     <label for="remember">Remember me on this computer</label>
                 </div>
 
                 <div class="action_btns">
                     <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
-                    <div class="one_half last"><a href="#" class="btn btn_red">Login</a></div>
+                    <div class="one_half last"><a href="{{ route('login') }}" class="btn btn_red">Login</a></div>
                 </div>
             </form>
 

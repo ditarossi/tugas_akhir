@@ -13,6 +13,12 @@
             </a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="/tbl_wisata">
+              <i class="icon-open menu-icon"></i>
+              <span class="menu-title">Daftar Wisata</span>
+            </a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
               <i class="icon-layout menu-icon"></i>
               <span class="menu-title">UI Elements</span>
@@ -114,12 +120,7 @@
               </ul>
             </div>
           </li>-->
-          <li class="nav-item">
-            <a class="nav-link" href="pages/ui-features/popups.html">
-              <i class="icon-open menu-icon"></i>
-              <span class="menu-title">Popups</span>
-            </a>
-          </li>
+         
           <li class="nav-item">
             <a class="nav-link" href="pages/ui-features/notifications.html">
               <i class="icon-esc menu-icon"></i>

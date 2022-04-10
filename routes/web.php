@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\WisataController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,6 +33,9 @@ Route::view('/admin2', 'admin2.isi');
 //CRUD USER
 Route::resource('tbl_user', '\App\Http\Controllers\UserController');
 
+//CRUD WISATA
+Route::resource('tbl_wisata', '\App\Http\Controllers\WisataControllers');
+
 //masyarakat umum
 Route::view('/landing', 'landing.isi');
 Route::view('/sejarah', 'landing.sejarah');
@@ -51,6 +55,8 @@ Auth::routes();
 //Route::view('user_view', 'user_view.isi');
 Route::get('admin', [App\Http\Controllers\HomeController::class, 'admin'])->name('admin')->middleware('is_admin');
 Route::get('user_view', [App\Http\Controllers\HomeController::class,'index'])->name('user_view');
+//Route::get('login', [App\Http\Controllers\Auth\LoginController::class, 'login']);
+
 //1. admin/home -> admin
 //2. admin.home -> admin.dashboard
 
