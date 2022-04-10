@@ -70,7 +70,10 @@ class WisataControllers extends Controller
      */
     public function edit($id)
     {
-        //
+        $model = Wisata::find($id);
+        return view('admin2.wisata.update_wisata', compact(
+            'model'
+        ));
     }
 
     /**
@@ -82,7 +85,14 @@ class WisataControllers extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $model = Wisata::find($id);
+        $model->nama_wisata = $request->nama_wisata;
+        $model->fasilitas = $request->fasilitas;
+        $model->kuota = $request->kuota;
+        $model->keterangan = $request->keterangan;
+        $model->save();
+
+        return redirect('tbl_wisata');
     }
 
     /**
@@ -93,6 +103,8 @@ class WisataControllers extends Controller
      */
     public function destroy($id)
     {
-        //
+        $model = Wisata::find($id);
+        $model->delete();
+        return redirect('tbl_wisata');
     }
 }
