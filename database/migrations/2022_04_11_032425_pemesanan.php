@@ -19,7 +19,9 @@ class Pemesanan extends Migration
             $table->string('ID_Wisata'); 
             $table->date('Tanggal_Kunjungan');    
             $table->text('fasilitas');     
-            $table->string('kuota');  
+            $table->string('jumlah');  
+            $table->string('tagihan');  
+            $table->string('status_pembayaran'); 
             $table->timestamps();
         });
     }

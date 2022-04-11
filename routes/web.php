@@ -36,6 +36,9 @@ Route::resource('tbl_user', '\App\Http\Controllers\UserController');
 //CRUD WISATA
 Route::resource('tbl_wisata', '\App\Http\Controllers\WisataControllers');
 
+//CRUD PEMESANAN
+Route::resource('tbl_pemesanan', '\App\Http\Controllers\PemesananController');
+
 //masyarakat umum
 Route::view('/landing', 'landing.isi');
 Route::view('/sejarah', 'landing.sejarah');
