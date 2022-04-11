@@ -14,7 +14,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/tbl_wisata">
-              <i class="icon-open menu-icon"></i>
+              <i class="#"></i>
               <span class="menu-title">Daftar Wisata</span>
             </a>
           </li>
