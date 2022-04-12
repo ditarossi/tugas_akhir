@@ -86,7 +86,8 @@ https://templatemo.com/tm-570-chain-app-dev
 
         <!-- Username & Password Login form -->
         <div class="user_login">
-            <form >
+            <form action="/login" method="post" enctype="multipart/form-data">
+            @csrf
                 <label>Email / Username</label>
                 <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus/>
                 <br />
@@ -102,7 +103,9 @@ https://templatemo.com/tm-570-chain-app-dev
 
                 <div class="action_btns">
                     <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
-                    <div class="one_half last"><a href="{{ route('login') }}" class="btn btn_red">Login</a></div>
+                    <div class="one_half">
+                            <input type="submit" name="login" value="Sumbit">
+                        </div>
                 </div>
             </form>
 

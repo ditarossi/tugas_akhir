@@ -56,9 +56,9 @@ Route::view('/kerjasama', 'user_view.kerjasama');
 //LOGIN
 Auth::routes();
 //Route::view('user_view', 'user_view.isi');
-Route::get('admin', [App\Http\Controllers\HomeController::class, 'admin'])->name('admin')->middleware('is_admin');
-Route::get('user_view', [App\Http\Controllers\HomeController::class,'index'])->name('user_view');
-//Route::get('login', [App\Http\Controllers\Auth\LoginController::class, 'login']);
+Route::get('/admin', [App\Http\Controllers\HomeController::class, 'admin'])->name('admin')->middleware('is_admin');
+Route::get('/user_view', [App\Http\Controllers\HomeController::class,'index'])->name('user_view');
+Route::get('/login', [App\Http\Controllers\Auth\LoginController::class, 'login']);
 
 //1. admin/home -> admin
 //2. admin.home -> admin.dashboard
