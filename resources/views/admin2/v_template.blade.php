@@ -16,6 +16,7 @@
   <!-- endinject -->
   <!-- Plugin css for this page -->
   <link rel="stylesheet" href="{{asset('dashboard2')}}/vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+  <link rel="stylesheet" href="{{asset('dashboard2')}}/vendors/datatables.net-bs4/dataTables.bootstrap4.css">
   <link rel="stylesheet" href="{{asset('dashboard2')}}/vendors/ti-icons/css/themify-icons.css">
   <link rel="stylesheet" type="text/css" href="{{asset('dashboard2')}}/js/select.dataTables.min.css">
   <!-- End plugin css for this page -->
@@ -234,6 +235,8 @@
   <script src="{{asset('dashboard2')}}/vendors/js/vendor.bundle.base.js"></script>
   <!-- endinject -->
   <!-- Plugin js for this page -->
+  <script src="{{asset('dashboard2')}}/vendors/datatables.net/jquery.dataTables.js"></script>
+        <script src="{{asset('dashboard2')}}/vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
   <script src="{{asset('dashboard2')}}/vendors/chart.js/Chart.min.js"></script>
   <script src="{{asset('dashboard2')}}/vendors/datatables.net/jquery.dataTables.js"></script>
   <script src="{{asset('dashboard2')}}/vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
@@ -248,6 +251,7 @@
   <script src="{{asset('dashboard2')}}/js/todolist.js"></script>
   <!-- endinject -->
   <!-- Custom js for this page-->
+  <script src="{{asset('dashboard2')}}/js/data-table.js"></script>
   <script src="{{asset('dashboard2')}}/js/jquery.cookie.js" type="text/javascript"></script>
   <script src="{{asset('dashboard2')}}/js/dashboard.js"></script>
   <script src="{{asset('dashboard2')}}/js/Chart.roundedBarCharts.js"></script>

@@ -5,7 +5,6 @@
 
 @section('content')
 <!-- partial -->
-
 <div class="main-panel">
         <div class="content-wrapper">
           <div class="card">
@@ -52,5 +51,4 @@
             </div>
           </div>
         </div>
-
 @endsection
