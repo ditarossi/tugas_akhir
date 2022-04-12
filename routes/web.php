@@ -42,10 +42,10 @@ Route::resource('tbl_pemesanan', '\App\Http\Controllers\PemesananController');
 
 //masyarakat umum
 Route::view('/landing', 'landing.isi');
-Route::view('/sejarah', 'landing.sejarah');
-Route::view('/struktur', 'landing.struktur');
-Route::view('/komunitas', 'landing.komunitas');
-Route::view('/kerjasama', 'landing.kerjasama');
+Route::view('/sejarah1', 'landing.sejarah');
+Route::view('/struktur1', 'landing.struktur');
+Route::view('/komunitas1', 'landing.komunitas');
+Route::view('/kerjasama1', 'landing.kerjasama');
 
 //user
 Route::view('/user_view', 'user_view.isi');

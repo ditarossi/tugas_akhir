@@ -54,7 +54,7 @@
             <h4>Sejarah</h4>
             <p>You are not allowed to redistribute this template ZIP file on any other website.</p>
             <div class="text-button">
-              <a href="/sejarah">Read More <i class="fa fa-arrow-right"></i></a>
+              <a href="/sejarah1">Read More <i class="fa fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -64,7 +64,7 @@
             <h4>Struktur Organisasi</h4>
             <p>You are allowed to use the Chain App Dev HTML template. Feel free to modify or edit this layout.</p>
             <div class="text-button">
-              <a href="/struktur">Read More <i class="fa fa-arrow-right"></i></a>
+              <a href="/struktur1">Read More <i class="fa fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -74,7 +74,7 @@
             <h4>Komunitas</h4>
             <p>If this template is beneficial for your work, please support us <a rel="nofollow" href="https://paypal.me/templatemo" target="_blank">a little via PayPal</a>. Thank you.</p>
             <div class="text-button">
-              <a href="/komunitas">Read More <i class="fa fa-arrow-right"></i></a>
+              <a href="/komunitas1">Read More <i class="fa fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -84,7 +84,7 @@
             <h4>Kerjasama</h4>
             <p>Lorem ipsum dolor consectetur adipiscing elit sedder williamsburg photo booth quinoa and fashion axe.</p>
             <div class="text-button">
-              <a href="/kerjasama">Read More <i class="fa fa-arrow-right"></i></a>
+              <a href="/kerjasama1">Read More <i class="fa fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -462,4 +462,5 @@
       </div>
     </div>
   </div> 
+</div>
   @endsection
