@@ -11,7 +11,7 @@
               <div class="card">
                 <div class="card-body">
                   <h4 class="card-title">Wisata Update Form</h4>
-                  <form class="forms-sample" action="{{ url('tbl_wisata/'.$model->id) }}" method="post">
+                  <form class="forms-sample" action="{{ url('tbl_wisata/'.$model->ID_Wisata) }}" method="post">
                       @csrf
                       <input type="hidden" name="_method" value="PATCH">
                     <div class="form-group">

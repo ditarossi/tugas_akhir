@@ -38,7 +38,7 @@
                             <td>{{ $value->keterangan }}</td>
                             <td>
                               <a class="btn btn-outline-warning" href="{{ url('tbl_wisata/'.$value->ID_Wisata.'/edit') }}">Update</a>
-                              <form action="{{ url('tbl_wisata/'.$value->id) }}" method="post">
+                              <form action="{{ url('tbl_wisata/'.$value->ID_Wisata) }}" method="post">
                                 @csrf 
                                 <input type="hidden" name="_method" value="delete">
                                 <button class="btn btn-outline-danger" type="submit">Delete</button>
