@@ -17,7 +17,8 @@ class Wisata extends Migration
             $table->id('ID_Wisata');
             $table->string('nama_wisata');
             $table->text('fasilitas'); //kalau emang dibedakan brarti nanti berelasi dengan table fasilitas
-            $table->string('kuota');    
+            $table->integer('kuota');  
+            $table->char('harga', 15);  
             $table->text('keterangan');     
             $table->timestamps();
         });
