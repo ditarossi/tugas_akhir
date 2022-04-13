@@ -26,6 +26,10 @@
                       <input name="kuota" type="text" class="form-control" id="exampleInputPassword1" placeholder="Kuota">
                     </div>
                     <div class="form-group">
+                      <label for="exampleInputPassword1">Harga</label>
+                      <input name="harga" type="text" class="form-control" id="exampleInputPassword1" placeholder="Harga">
+                    </div>
+                    <div class="form-group">
                       <label for="exampleInputConfirmPassword1">Keterangan</label>
                       <input name="keterangan" type="text" class="form-control" id="exampleInputConfirmPassword1" placeholder="keterangan">
                     </div>

@@ -45,6 +45,7 @@ class WisataControllers extends Controller
         $model->nama_wisata = $request->nama_wisata;
         $model->fasilitas = $request->fasilitas;
         $model->kuota = $request->kuota;
+        $model->harga = $request->harga;
         $model->keterangan = $request->keterangan;
         $model->save();
 
@@ -70,6 +71,7 @@ class WisataControllers extends Controller
      */
     public function edit($id)
     {
+        //dd($requst);
         $model = Wisata::find($id);
         return view('admin2.wisata.update_wisata', compact(
             'model'
@@ -89,6 +91,7 @@ class WisataControllers extends Controller
         $model->nama_wisata = $request->nama_wisata;
         $model->fasilitas = $request->fasilitas;
         $model->kuota = $request->kuota;
+        $model->harga = $request->harga;
         $model->keterangan = $request->keterangan;
         $model->save();
 

@@ -40,7 +40,7 @@
                             <td>{{ $value->tagihan }}</td>
                             <td>{{ $value->status_pembayaran }}</td>
                             <td>
-                              <a class="btn btn-outline-warning" href="{{ url('tbl_pemesanan'.$value->id.'/edit') }}">Update</a>
+                              <a class="btn btn-outline-warning" href="{{ url('tbl_pemesanan'.$value->ID_Pemesanan.'/edit') }}">Update</a>
                               <form action="{{ url('tbl_pemesanan/'.$value->id) }}" method="post">
                                 @csrf 
                                 <input type="hidden" name="_method" value="delete">

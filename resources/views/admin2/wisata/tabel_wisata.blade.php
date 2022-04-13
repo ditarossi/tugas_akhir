@@ -23,6 +23,7 @@
                             <th>Nama Wisata</th>
                             <th>Fasilitas</th>
                             <th>Kuota</th>
+                            <th>Harga</th>
                             <th>Keterangan</th>
                             <th>Actions</th>
                         </tr>
@@ -33,9 +34,10 @@
                             <td>{{ $value->nama_wisata }}</td>
                             <td>{{ $value->fasilitas }}</td>
                             <td>{{ $value->kuota }}</td>
+                            <td>{{ $value->harga }}</td>
                             <td>{{ $value->keterangan }}</td>
                             <td>
-                              <a class="btn btn-outline-warning" href="{{ url('tbl_wisata/'.$value->id.'/edit') }}">Update</a>
+                              <a class="btn btn-outline-warning" href="{{ url('tbl_wisata/'.$value->ID_Wisata.'/edit') }}">Update</a>
                               <form action="{{ url('tbl_wisata/'.$value->id) }}" method="post">
                                 @csrf 
                                 <input type="hidden" name="_method" value="delete">

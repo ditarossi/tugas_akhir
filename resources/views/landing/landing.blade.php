@@ -78,7 +78,7 @@
 
         <!-- Username & Password Login form -->
         <div class="user_login">
-            <form action="/login" method="post" enctype="multipart/form-data">
+            <form method="POST" action="/login" enctype="multipart/form-data">
             @csrf
                 <label>Email / Username</label>
                 <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus/>

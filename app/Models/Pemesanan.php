@@ -9,6 +9,7 @@ class Pemesanan extends Model
 {
     use HasFactory;
     public $table = "pemesanan";
+    protected $primaryKey = 'ID_User';
     protected $fillable = [
         'ID_User',
         'ID_Wisata',

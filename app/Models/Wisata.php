@@ -9,6 +9,7 @@ class wisata extends Model
 {
     use HasFactory;
     public $table = "wisata";
+    protected $primaryKey = 'ID_Wisata';
     protected $fillable = [
         'nama_wisata',
         'fasilitas',

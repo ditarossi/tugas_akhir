@@ -34,7 +34,7 @@
                             <td>{{ $value->password }}</td>
                             <td>{{ $value->is_admin }}</td>
                             <td>
-                              <a class="btn btn-outline-warning" href="{{ url('tbl_user/'.$value->id.'/edit') }}">Update</a>
+                              <a class="btn btn-outline-warning" href="{{ url('tbl_user/'.$value->ID_user.'/edit') }}">Update</a>
                               <form action="{{ url('tbl_user/'.$value->id) }}" method="post">
                                 @csrf 
                                 <input type="hidden" name="_method" value="delete">
