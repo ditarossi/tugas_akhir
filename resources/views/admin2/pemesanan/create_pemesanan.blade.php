@@ -23,7 +23,7 @@
                     </div>
                     <div class="form-group">
                       <label for="exampleInputUsername1">Tanggal Kunjungan</label>
-                      <input name="Tanggal Kunjungan" type="date" class="form-control" id="exampleInputUsername1" placeholder="Tanggal Kunjungan">
+                      <input name="Tanggal_Kunjungan" type="date" class="form-control" id="exampleInputUsername1" placeholder="Tanggal Kunjungan">
                     </div>
                     <div class="form-group">
                       <label for="#">Fasilitas</label>

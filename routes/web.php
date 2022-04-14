@@ -65,6 +65,9 @@ Route::resource('tbl_pemesanan', '\App\Http\Controllers\PemesananController');
 //CRUD RESI PEMBAYARAN
 Route::resource('tbl_resi', '\App\Http\Controllers\ResiPembayaran');
 
+//CRUD BUKTI TRANSAKSI
+Route::resource('tbl_bukti', '\App\Http\Controllers\BuktiTfController');
+
 //1. admin/home -> admin
 //2. admin.home -> admin.dashboard
 
