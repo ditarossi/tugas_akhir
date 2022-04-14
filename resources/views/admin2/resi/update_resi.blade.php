@@ -11,7 +11,7 @@
               <div class="card">
                 <div class="card-body">
                   <h4 class="card-title">Resi Pembayaran Update Form</h4>
-                  <form class="forms-sample" action="{{ url('tbl_resi/'.$model->ID_Resi-Pembayaran) }}" method="post">
+                  <form class="forms-sample" action="{{ url('tbl_resi/'.$model->ID_ResiPembayaran) }}" method="post">
                       @csrf
                       <input type="hidden" name="_method" value="PATCH">
                     <div class="form-group">

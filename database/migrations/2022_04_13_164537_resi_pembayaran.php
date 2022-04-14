@@ -14,7 +14,7 @@ class ResiPembayaran extends Migration
     public function up()
     {
         Schema::create('resi_pembayaran', function (Blueprint $table) {
-            $table->id('ID_Resi-Pembayaran');
+            $table->id('ID_ResiPembayaran');
             $table->string('ID_Pemesanan');
             $table->string('ID_User');
             $table->string('ID_Wisata'); 

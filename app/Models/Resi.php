@@ -9,7 +9,7 @@ class Resi extends Model
 {
     use HasFactory;
     public $table = "resi_pembayaran";
-    protected $primaryKey = 'ID_Pemesanan';
+    protected $primaryKey = 'ID_ResiPembayaran';
     protected $fillable = [
         'ID_Pemesanan',
         'ID_User',
