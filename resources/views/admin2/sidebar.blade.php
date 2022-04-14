@@ -25,6 +25,12 @@
             </a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="/tbl_resi">
+              <i class="#"></i>
+              <span class="menu-title">Resi Pembayaran</span>
+            </a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
               <i class="icon-layout menu-icon"></i>
               <span class="menu-title">UI Elements</span>

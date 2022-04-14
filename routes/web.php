@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\WisataController;
+use App\Http\Controllers\ResiPembayaran;
 use App\Http\Controllers\Auth\LoginController;
 
 /*
@@ -60,6 +61,9 @@ Route::resource('tbl_wisata', '\App\Http\Controllers\WisataControllers');
 
 //CRUD PEMESANAN
 Route::resource('tbl_pemesanan', '\App\Http\Controllers\PemesananController');
+
+//CRUD RESI PEMBAYARAN
+Route::resource('tbl_resi', '\App\Http\Controllers\ResiPembayaran');
 
 //1. admin/home -> admin
 //2. admin.home -> admin.dashboard
