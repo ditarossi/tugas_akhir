@@ -68,6 +68,9 @@ Route::resource('tbl_resi', '\App\Http\Controllers\ResiPembayaran');
 //CRUD BUKTI TRANSAKSI
 Route::resource('tbl_bukti', '\App\Http\Controllers\BuktiTfController');
 
+//CRUD TIKET
+Route::resource('tbl_tiket', '\App\Http\Controllers\TiketController');
+
 //1. admin/home -> admin
 //2. admin.home -> admin.dashboard
 
