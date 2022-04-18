@@ -19,4 +19,9 @@ class Pemesanan extends Model
         'tagihan',
         'status_pembayaran',
     ];
+
+    // public function user()
+    // {
+    //     return $this->belongsTo(User::class);
+    // }
 }

@@ -19,7 +19,7 @@ use App\Http\Controllers\Auth\LoginController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('landing.isi');
 });
 
 //admin
@@ -55,6 +55,9 @@ Route::view('/admin2', 'admin2.isi');
 
 //CRUD USER
 Route::resource('tbl_user', '\App\Http\Controllers\UserController');
+
+//CRUD WISATA
+Route::resource('tbl_fasilitas', '\App\Http\Controllers\FasilitasController');
 
 //CRUD WISATA
 Route::resource('tbl_wisata', '\App\Http\Controllers\WisataControllers');

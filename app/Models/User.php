@@ -25,6 +25,11 @@ class User extends Authenticatable
         'is_admin',
     ];
 
+    // public function pemesanan()
+    // {
+    //     return $this->hasMany(Pemesanan::class);
+    // }
+
     /**
      * The attributes that should be hidden for serialization.
      *

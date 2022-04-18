@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class BuktiTransaksi extends Migration
+class Fasilitas extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,10 @@ class BuktiTransaksi extends Migration
      */
     public function up()
     {
-        Schema::create('bukti_transaksi', function (Blueprint $table) {
-            $table->id('ID_BuktiTransaksi');
-            $table->string('ID_user');
-            $table->string('ID_ResiPembayaran'); 
-            $table->string('foto');     
+        Schema::create('fasilitas', function (Blueprint $table) {
+            $table->id('ID_Fasilitas');
+            $table->string('Fasilitas');
+            $table->string('Harga');   
             $table->timestamps();
         });
     }

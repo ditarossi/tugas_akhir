@@ -16,7 +16,7 @@ class ResiPembayaran extends Migration
         Schema::create('resi_pembayaran', function (Blueprint $table) {
             $table->id('ID_ResiPembayaran');
             $table->string('ID_Pemesanan');
-            $table->string('ID_User');
+            $table->string('ID_user');
             $table->string('ID_Wisata'); 
             $table->date('Tanggal_Kunjungan');    
             $table->text('fasilitas');     
