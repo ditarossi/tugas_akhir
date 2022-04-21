@@ -9,9 +9,14 @@ class Fasilitas extends Model
 {
     use HasFactory;
     public $table = "fasilitas";
-    protected $primaryKey = 'ID_Fasilitas';
+    protected $primaryKey = 'id';
     protected $fillable = [
-        'Fasilitas',
-        'Harga',
+        'fasilitas',
+        'harga',
     ];
+
+    public function pemesanan()
+    {
+        return $this->belongsTo('App\Models\Pemesanan');
+    }
 }

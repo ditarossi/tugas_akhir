@@ -11,16 +11,16 @@
               <div class="card">
                 <div class="card-body">
                   <h4 class="card-title">Fasilitas Create Form</h4>
-                  <form class="forms-sample" action="{{ url('tbl_fasilitas/'.$model->ID_Fasilitas) }}" method="post">
+                  <form class="forms-sample" action="{{ url('tbl_fasilitas/'.$model->id) }}" method="post">
                     @csrf
                     <input type="hidden" name="_method" value="PATCH">
                     <div class="form-group">
                       <label for="exampleInputUsername1">Fasilitas</label>
-                      <input value="{{ $model->Fasilitas }}" name="Fasilitas" type="text" class="form-control" id="exampleInputUsername1" placeholder="Fasilitas">
+                      <input value="{{ $model->fasilitas }}" name="fasilitas" type="text" class="form-control" id="exampleInputUsername1" placeholder="Fasilitas">
                     </div>
                     <div class="form-group">
                       <label for="exampleInputUsername1">Harga</label>
-                      <input value="{{ $model->Harga }}" name="Harga" type="text" class="form-control" id="exampleInputUsername1" placeholder="Harga">
+                      <input value="{{ $model->harga }}" name="harga" type="text" class="form-control" id="exampleInputUsername1" placeholder="Harga">
                     </div>
                     <div class="form-check">
                       <label class="form-check-label text-muted">

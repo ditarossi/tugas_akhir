@@ -14,9 +14,9 @@ class Fasilitas extends Migration
     public function up()
     {
         Schema::create('fasilitas', function (Blueprint $table) {
-            $table->id('ID_Fasilitas');
-            $table->string('Fasilitas');
-            $table->string('Harga');   
+            $table->id();
+            $table->string('fasilitas');
+            $table->string('harga');   
             $table->timestamps();
         });
     }

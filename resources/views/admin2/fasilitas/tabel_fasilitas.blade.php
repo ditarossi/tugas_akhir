@@ -27,11 +27,11 @@
                       <tbody>
                         @foreach($datas as $value)
                         <tr>
-                            <td>{{ $value->Fasilitas }}</td>
-                            <td>{{ $value->Harga }}</td>
+                            <td>{{ $value->fasilitas }}</td>
+                            <td>{{ $value->harga }}</td>
                             <td>
-                              <a class="btn btn-outline-warning" href="{{ url('tbl_fasilitas/'.$value->ID_Fasilitas.'/edit') }}">Update</a>
-                              <form action="{{ url('tbl_fasilitas/'.$value->ID_Fasilitas) }}" method="post">
+                              <a class="btn btn-outline-warning" href="{{ url('tbl_fasilitas/'.$value->id.'/edit') }}">Update</a>
+                              <form action="{{ url('tbl_fasilitas/'.$value->id) }}" method="post">
                                 @csrf 
                                 <input type="hidden" name="_method" value="delete">
                                 <button class="btn btn-outline-danger" type="submit">Delete</button>

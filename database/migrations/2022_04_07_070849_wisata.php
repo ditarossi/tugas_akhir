@@ -14,9 +14,8 @@ class Wisata extends Migration
     public function up()
     {
         Schema::create('wisata', function (Blueprint $table) {
-            $table->id('ID_Wisata');
+            $table->id();
             $table->string('nama_wisata');
-            $table->text('fasilitas');
             $table->integer('kuota');  
             $table->char('harga', 15);  
             $table->text('keterangan');     

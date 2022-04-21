@@ -14,11 +14,11 @@ class Pemesanan extends Migration
     public function up()
     {
         Schema::create('pemesanan', function (Blueprint $table) {
-            $table->id('ID_Pemesanan');
-            $table->string('ID_user');
-            $table->string('ID_Wisata'); 
-            $table->date('Tanggal_Kunjungan');    
-            $table->text('fasilitas');     
+            $table->id();
+            $table->foreignID('users_id');
+            $table->foreignID('wisata_id');
+            $table->foreignID('fasilitas_id'); 
+            $table->date('Tanggal_Kunjungan');         
             $table->integer('jumlah');  
             $table->char('tagihan', 15);  
             $table->string('status_pembayaran'); 

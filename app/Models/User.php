@@ -17,13 +17,18 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
-    protected $primaryKey = 'ID_user';
+    protected $primaryKey = 'id';
     protected $fillable = [
         'name',
         'email',
         'password',
         'is_admin',
     ];
+
+    public function pemesanan()
+    {
+        return $this->belongsTo('App\Models\Pemesanan');
+    }
 
     // public function pemesanan()
     // {

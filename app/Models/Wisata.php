@@ -9,12 +9,17 @@ class wisata extends Model
 {
     use HasFactory;
     public $table = "wisata";
-    protected $primaryKey = 'ID_Wisata';
+    protected $primaryKey = 'id';
     protected $fillable = [
         'nama_wisata',
-        'fasilitas',
         'kuota',
+        'harga',
         'keterangan',
     ];
+
+    public function pemesanan()
+    {
+        return $this->belongsTo('App\Models\Pemesanan');
+    }
 
 }

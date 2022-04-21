@@ -18,10 +18,6 @@
                       <input name="nama_wisata" type="text" class="form-control" id="exampleInputUsername1" placeholder="Nama Wisata">
                     </div>
                     <div class="form-group">
-                      <label for="#">Fasilitas</label>
-                      <input name="fasilitas" type="text" class="form-control" id="#" placeholder="Fasilitas">
-                    </div>
-                    <div class="form-group">
                       <label for="exampleInputPassword1">Kuota</label>
                       <input name="kuota" type="text" class="form-control" id="exampleInputPassword1" placeholder="Kuota">
                     </div>

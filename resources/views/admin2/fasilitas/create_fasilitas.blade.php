@@ -15,11 +15,11 @@
                       @csrf
                     <div class="form-group">
                       <label for="exampleInputUsername1">Fasilitas</label>
-                      <input name="Fasilitas" type="text" class="form-control" id="exampleInputUsername1" placeholder="Fasilitas">
+                      <input name="fasilitas" type="text" class="form-control" id="exampleInputUsername1" placeholder="Fasilitas">
                     </div>
                     <div class="form-group">
                       <label for="exampleInputUsername1">Harga</label>
-                      <input name="Harga" type="text" class="form-control" id="exampleInputUsername1" placeholder="Harga">
+                      <input name="harga" type="text" class="form-control" id="exampleInputUsername1" placeholder="Harga">
                     </div>
                     <div class="form-check">
                       <label class="form-check-label text-muted">

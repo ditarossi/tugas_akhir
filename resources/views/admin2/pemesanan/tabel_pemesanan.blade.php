@@ -21,8 +21,8 @@
                         <tr>
                             <th>ID User</th>
                             <th>ID Wisata</th>
+                            <th>ID Fasilitas</th>
                             <th>Tanggal Kunjungan</th>
-                            <th>Fasilitas</th>
                             <th>Jumlah</th>
                             <th>Tagihan</th>
                             <th>Status Pembayaran</th>
@@ -32,16 +32,22 @@
                       <tbody>
                         @foreach($datas as $value)
                         <tr>
-                            <td>{{ $value->ID_user }}</td>
-                            <td>{{ $value->ID_Wisata }}</td>
+                            <td>
+                              {{ $value->user->name }}
+                            </td>
+                            <td>
+                              {{ $value->wisata->nama_wisata }}
+                            </td>
+                            <td>
+                              {{ $value->fasilitas->fasilitas }}
+                            </td>
                             <td>{{ $value->Tanggal_Kunjungan }}</td>
-                            <td>{{ $value->fasilitas }}</td>
                             <td>{{ $value->jumlah }}</td>
                             <td>{{ $value->tagihan }}</td>
                             <td>{{ $value->status_pembayaran }}</td>
                             <td>
-                              <a class="btn btn-outline-warning" href="{{ url('tbl_pemesanan/'.$value->ID_Pemesanan.'/edit') }}">Update</a>
-                              <form action="{{ url('tbl_pemesanan/'.$value->ID_Pemesanan) }}" method="post">
+                              <a class="btn btn-outline-warning" href="{{ url('tbl_pemesanan/'.$value->id.'/edit') }}">Update</a>
+                              <form action="{{ url('tbl_pemesanan/'.$value->id) }}" method="post">
                                 @csrf 
                                 <input type="hidden" name="_method" value="delete">
                                 <button class="btn btn-outline-danger" type="submit">Delete</button>

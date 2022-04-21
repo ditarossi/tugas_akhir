@@ -42,8 +42,8 @@ class FasilitasController extends Controller
     public function store(Request $request)
     {
         $model = new Fasilitas;
-        $model->Fasilitas = $request->Fasilitas;
-        $model->Harga = $request->Harga;
+        $model->fasilitas = $request->fasilitas;
+        $model->harga = $request->harga;
         $model->save();
 
         return redirect('tbl_fasilitas');
@@ -84,8 +84,8 @@ class FasilitasController extends Controller
     public function update(Request $request, $id)
     {
         $model = Fasilitas::find($id);
-        $model->Fasilitas = $request->Fasilitas;
-        $model->Harga = $request->Harga;
+        $model->fasilitas = $request->fasilitas;
+        $model->harga = $request->harga;
         $model->save();
 
         return redirect('tbl_fasilitas');
