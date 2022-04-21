@@ -14,9 +14,9 @@ class BuktiTransaksi extends Migration
     public function up()
     {
         Schema::create('bukti_transaksi', function (Blueprint $table) {
-            $table->id('ID_BuktiTransaksi');
-            $table->string('ID_user');
-            $table->string('ID_ResiPembayaran'); 
+            $table->id();
+            $table->foreignID('users_id');
+            $table->foreignID('resi_id'); 
             $table->string('foto');     
             $table->timestamps();
         });

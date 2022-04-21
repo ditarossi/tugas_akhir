@@ -38,6 +38,16 @@ class Pemesanan extends Model
         return $this->belongsTo('App\Models\Fasilitas','fasilitas_id','id');
     }
 
+    public function resi()
+    {
+        return $this->belongsTo('App\Models\Resi');
+    }
+
+    public function tiket()
+    {
+        return $this->belongsTo('App\Models\Tiket');
+    }
+
     // public function user()
     // {
     //     return $this->belongsTo(User::class);

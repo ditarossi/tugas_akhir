@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\BuktiTf;
+use App\Models\Resi;
 
 class BuktiTfController extends Controller
 {
@@ -42,8 +43,8 @@ class BuktiTfController extends Controller
     public function store(Request $request)
     {
         $model = new BuktiTf;
-        $model->ID_User = $request->ID_User;
-        $model->ID_ResiPembayaran = $request->ID_ResiPembayaran;
+        $model->users_id = $request->users_id;
+        $model->resi_id = $request->resi_id;
         $model->foto = $request->foto;
         $model->save();
 
@@ -85,8 +86,8 @@ class BuktiTfController extends Controller
     public function update(Request $request, $id)
     {
         $model = BuktiTf::find($id);
-        $model->ID_User = $request->ID_User;
-        $model->ID_ResiPembayaran = $request->ID_ResiPembayaran;
+        $model->users_id = $request->users_id;
+        $model->resi_id = $request->resi_id;
         $model->foto = $request->foto;
         $model->save();
 

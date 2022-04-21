@@ -4,6 +4,12 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Tiket;
+use App\Models\Pemesanan;
+use App\Models\User;
+use App\Models\Resi;
+use App\Models\BuktiTf;
+use App\Models\Wisata;
+use App\Models\Fasilitas;
 
 class TiketController extends Controller
 {
@@ -42,13 +48,13 @@ class TiketController extends Controller
     public function store(Request $request)
     {
         $model = new Tiket;
-        $model->ID_Pemesanan = $request->ID_Pemesanan;
-        $model->ID_User = $request->ID_User;
-        $model->ID_ResiPembayaran = $request->ID_ResiPembayaran;
-        $model->ID_BuktiTransaksi = $request->ID_BuktiTransaksi;
-        $model->ID_Wisata = $request->ID_Wisata;
+        $model->pemesanan_id = $request->pemesanan_id;
+        $model->users_id = $request->users_id;
+        $model->resi_id = $request->resi_id;
+        $model->bukti_transaksi_id = $request->bukti_transaksi_id;
+        $model->wisata_id = $request->wisata_id;
+        $model->fasilitas_id = $request->fasilitas_id;
         $model->Tanggal_Kunjungan = $request->Tanggal_Kunjungan;
-        $model->fasilitas = $request->fasilitas;
         $model->jumlah = $request->jumlah;
         $model->status_pembayaran = $request->status_pembayaran;
         $model->save();
@@ -92,13 +98,13 @@ class TiketController extends Controller
     {
         $model = Tiket::find($id);
 
-        $model->ID_Pemesanan = $request->ID_Pemesanan;
-        $model->ID_User = $request->ID_User;
-        $model->ID_ResiPembayaran = $request->ID_ResiPembayaran;
-        $model->ID_BuktiTransaksi = $request->ID_BuktiTransaksi;
-        $model->ID_Wisata = $request->ID_Wisata;
+        $model->pemesanan_id = $request->pemesanan_id;
+        $model->users_id = $request->users_id;
+        $model->resi_id = $request->resi_id;
+        $model->bukti_transaksi_id = $request->bukti_transaksi_id;
+        $model->wisata_id = $request->wisata_id;
+        $model->fasilitas_id = $request->fasilitas_id;
         $model->Tanggal_Kunjungan = $request->Tanggal_Kunjungan;
-        $model->fasilitas = $request->fasilitas;
         $model->jumlah = $request->jumlah;
         $model->status_pembayaran = $request->status_pembayaran;
         $model->save();

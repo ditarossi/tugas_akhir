@@ -11,16 +11,16 @@
               <div class="card">
                 <div class="card-body">
                   <h4 class="card-title">Bukti Transaksi Update Form</h4>
-                  <form class="forms-sample" action="{{ url('tbl_bukti/'.$model->ID_BuktiTransaksi) }}" method="post">
+                  <form class="forms-sample" action="{{ url('tbl_bukti/'.$model->id) }}" method="post">
                       @csrf
                       <input type="hidden" name="_method" value="PATCH">
                       <div class="form-group">
                       <label for="exampleInputUsername1">ID User</label>
-                      <input value="{{ $model->ID_User }}" name="ID_User" type="text" class="form-control" id="exampleInputUsername1" placeholder="ID User">
+                      <input value="{{ $model->users_id }}" name="users_id" type="text" class="form-control" id="exampleInputUsername1" placeholder="ID User">
                     </div>
                     <div class="form-group">
                       <label for="exampleInputUsername1">ID Resi Pembayaran</label>
-                      <input value="{{ $model->ID_ResiPembayaran }}" name="ID_ResiPembayaran" type="text" class="form-control" id="exampleInputUsername1" placeholder="ID Resi Pembayaran">
+                      <input value="{{ $model->resi_id }}" name="resi_id" type="text" class="form-control" id="exampleInputUsername1" placeholder="ID Resi Pembayaran">
                     </div>
                     <div class="form-group">
                       <label for="exampleInputUsername1">Foto</label>

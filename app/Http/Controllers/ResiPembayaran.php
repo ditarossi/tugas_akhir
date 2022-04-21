@@ -4,6 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Resi;
+use App\Models\Pemesanan;
+use App\Models\Fasilitas;
+use App\Models\Wisata;
+use App\Models\User;
 
 class ResiPembayaran extends Controller
 {
@@ -42,11 +46,11 @@ class ResiPembayaran extends Controller
     public function store(Request $request)
     {
         $model = new Resi;
-        $model->ID_Pemesanan = $request->ID_Pemesanan;
-        $model->ID_User = $request->ID_User;
-        $model->ID_Wisata = $request->ID_Wisata;
+        $model->pemesanan_id = $request->pemesanan_id;
+        $model->users_id = $request->users_id;
+        $model->wisata_id = $request->wisata_id;
+        $model->fasilitas_id = $request->fasilitas_id;
         $model->Tanggal_Kunjungan = $request->Tanggal_Kunjungan;
-        $model->fasilitas = $request->fasilitas;
         $model->jumlah = $request->jumlah;
         $model->tagihan = $request->tagihan;
         $model->save();

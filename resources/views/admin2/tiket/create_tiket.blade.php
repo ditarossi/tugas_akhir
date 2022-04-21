@@ -15,31 +15,31 @@
                       @csrf
                     <div class="form-group">
                       <label for="exampleInputUsername1">ID Pemesanan</label>
-                      <input name="ID_Pemesanan" type="text" class="form-control" id="exampleInputUsername1" placeholder="ID Pemesanan">
+                      <input name="pemesanan_id" type="text" class="form-control" id="exampleInputUsername1" placeholder="ID Pemesanan">
                     </div>
                     <div class="form-group">
                       <label for="exampleInputUsername1">ID User</label>
-                      <input name="ID_User" type="text" class="form-control" id="exampleInputUsername1" placeholder="ID User">
+                      <input name="users_id" type="text" class="form-control" id="exampleInputUsername1" placeholder="ID User">
                     </div>
                     <div class="form-group">
                       <label for="exampleInputUsername1">ID Resi Pembayaran</label>
-                      <input name="ID_ResiPembayaran" type="text" class="form-control" id="exampleInputUsername1" placeholder="ID Resi Pembayaran">
+                      <input name="resi_id" type="text" class="form-control" id="exampleInputUsername1" placeholder="ID Resi Pembayaran">
                     </div>
                     <div class="form-group">
                       <label for="exampleInputUsername1">ID Bukti Transaksi</label>
-                      <input name="ID_BuktiTransaksi" type="text" class="form-control" id="exampleInputUsername1" placeholder="ID Bukti Transaksi">
+                      <input name="bukti_transaksi_id" type="text" class="form-control" id="exampleInputUsername1" placeholder="ID Bukti Transaksi">
                     </div>
                     <div class="form-group">
                       <label for="exampleInputUsername1">ID Wisata</label>
-                      <input name="ID_Wisata" type="text" class="form-control" id="exampleInputUsername1" placeholder="ID Wisata">
+                      <input name="wisata_id" type="text" class="form-control" id="exampleInputUsername1" placeholder="ID Wisata">
+                    </div>
+                    <div class="form-group">
+                      <label for="#">Fasilitas</label>
+                      <input name="fasilitas_id" type="text" class="form-control" id="#" placeholder="Fasilitas">
                     </div>
                     <div class="form-group">
                       <label for="exampleInputUsername1">Tanggal Kunjungan</label>
                       <input name="Tanggal_Kunjungan" type="date" class="form-control" id="exampleInputUsername1" placeholder="Tanggal Kunjungan">
-                    </div>
-                    <div class="form-group">
-                      <label for="#">Fasilitas</label>
-                      <input name="fasilitas" type="text" class="form-control" id="#" placeholder="Fasilitas">
                     </div>
                     <div class="form-group">
                       <label for="exampleInputPassword1">Jumlah</label>

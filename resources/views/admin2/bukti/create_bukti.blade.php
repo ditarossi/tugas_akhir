@@ -15,11 +15,11 @@
                       @csrf
                     <div class="form-group">
                       <label for="exampleInputUsername1">ID User</label>
-                      <input name="ID_User" type="text" class="form-control" id="exampleInputUsername1" placeholder="ID User">
+                      <input name="users_id" type="text" class="form-control" id="exampleInputUsername1" placeholder="ID User">
                     </div>
                     <div class="form-group">
                       <label for="exampleInputUsername1">ID Resi Pembayaran</label>
-                      <input name="ID_ResiPembayaran" type="text" class="form-control" id="exampleInputUsername1" placeholder="ID Resi Pembayaran">
+                      <input name="resi_id" type="text" class="form-control" id="exampleInputUsername1" placeholder="ID Resi Pembayaran">
                     </div>
                     <div class="form-group">
                       <label for="exampleInputUsername1">Foto</label>

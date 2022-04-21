@@ -24,8 +24,8 @@
                             <th>ID Resi Pembayaran</th>
                             <th>ID Bukti Transaksi</th>
                             <th>ID Wisata</th>
-                            <th>Tanggal Kunjungan</th>
                             <th>Fasilitas</th>
+                            <th>Tanggal Kunjungan</th>
                             <th>Jumlah</th>
                             <th>Status Pembayaran</th>
                             <th>Actions</th>
@@ -34,18 +34,18 @@
                       <tbody>
                         @foreach($datas as $value)
                         <tr>
-                            <td>{{ $value->ID_Pemesanan }}</td>
-                            <td>{{ $value->ID_User }}</td>
-                            <td>{{ $value->ID_ResiPembayaran }}</td>
-                            <td>{{ $value->ID_BuktiTransaksi }}</td>
-                            <td>{{ $value->ID_Wisata }}</td>
+                            <td>{{ $value->pemesanan_id }}</td>
+                            <td>{{ $value->user->name }}</td>
+                            <td>{{ $value->resi_id }}</td>
+                            <td>{{ $value->bukti_transaksi_id }}</td>
+                            <td>{{ $value->wisata->nama_wisata }}</td>
+                            <td>{{ $value->fasilitas->fasilitas }}</td>
                             <td>{{ $value->Tanggal_Kunjungan }}</td>
-                            <td>{{ $value->fasilitas }}</td>
                             <td>{{ $value->jumlah }}</td>
                             <td>{{ $value->status_pembayaran }}</td>
                             <td>
-                              <a class="btn btn-outline-warning" href="{{ url('tbl_tiket/'.$value->ID_Tiket.'/edit') }}">Update</a>
-                              <form action="{{ url('tbl_tiket/'.$value->ID_Tiket) }}" method="post">
+                              <a class="btn btn-outline-warning" href="{{ url('tbl_tiket/'.$value->id.'/edit') }}">Update</a>
+                              <form action="{{ url('tbl_tiket/'.$value->id) }}" method="post">
                                 @csrf 
                                 <input type="hidden" name="_method" value="delete">
                                 <button class="btn btn-outline-danger" type="submit">Delete</button>

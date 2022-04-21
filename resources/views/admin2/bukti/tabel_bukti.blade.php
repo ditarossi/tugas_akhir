@@ -28,12 +28,12 @@
                       <tbody>
                         @foreach($datas as $value)
                         <tr>
-                            <td>{{ $value->ID_User }}</td>
-                            <td>{{ $value->ID_ResiPembayaran }}</td>
+                            <td>{{ $value->user->name }}</td>
+                            <td>{{ $value->resi_id }}</td>
                             <td>{{ $value->foto }}</td>
                             <td>
-                              <a class="btn btn-outline-warning" href="{{ url('tbl_bukti/'.$value->ID_BuktiTransaksi.'/edit') }}">Update</a>
-                              <form action="{{ url('tbl_bukti/'.$value->ID_BuktiTransaksi) }}" method="post">
+                              <a class="btn btn-outline-warning" href="{{ url('tbl_bukti/'.$value->id.'/edit') }}">Update</a>
+                              <form action="{{ url('tbl_bukti/'.$value->id) }}" method="post">
                                 @csrf 
                                 <input type="hidden" name="_method" value="delete">
                                 <button class="btn btn-outline-danger" type="submit">Delete</button>

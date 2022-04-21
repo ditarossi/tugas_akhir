@@ -11,28 +11,28 @@
               <div class="card">
                 <div class="card-body">
                   <h4 class="card-title">Pemesanan Update Form</h4>
-                  <form class="forms-sample" action="{{ url('tbl_tiket/'.$model->ID_Tiket) }}" method="post">
+                  <form class="forms-sample" action="{{ url('tbl_tiket/'.$model->id) }}" method="post">
                       @csrf
                       <input type="hidden" name="_method" value="PATCH">
                     <div class="form-group">
                       <label for="exampleInputUsername1">ID Pemesanan</label>
-                      <input value="{{ $model->ID_Pemesanan }}" name="ID_Pemesanan" type="text" class="form-control" id="exampleInputUsername1" placeholder="ID Pemesanan">
+                      <input value="{{ $model->pemesanan_id }}" name="pemesanan_id" type="text" class="form-control" id="exampleInputUsername1" placeholder="ID Pemesanan">
                     </div>
                     <div class="form-group">
                       <label for="exampleInputUsername1">ID User</label>
-                      <input value="{{ $model->ID_user }}" name="ID_User" type="text" class="form-control" id="exampleInputUsername1" placeholder="ID User">
+                      <input value="{{ $model->users_id }}" name="users_id" type="text" class="form-control" id="exampleInputUsername1" placeholder="ID User">
                     </div>
                     <div class="form-group">
                       <label for="exampleInputUsername1">ID Resi Pembayaran</label>
-                      <input value="{{ $model->ID_ResiPembayaran }}" name="ID_ResiPembayaran" type="text" class="form-control" id="exampleInputUsername1" placeholder="ID Resi Pembayaran">
+                      <input value="{{ $model->resi_id }}" name="resi_id" type="text" class="form-control" id="exampleInputUsername1" placeholder="ID Resi Pembayaran">
                     </div>
                     <div class="form-group">
                       <label for="exampleInputUsername1">ID Bukti Transaksi</label>
-                      <input value="{{ $model->ID_BuktiTransaksi }}" name="ID_BuktiTransaksi" type="text" class="form-control" id="exampleInputUsername1" placeholder="ID Bukti Transaksi">
+                      <input value="{{ $model->bukti_transaksi_id }}" name="bukti_transaksi_id" type="text" class="form-control" id="exampleInputUsername1" placeholder="ID Bukti Transaksi">
                     </div>
                     <div class="form-group">
                       <label for="exampleInputUsername1">ID Wisata</label>
-                      <input value="{{ $model->ID_Wisata }}" name="ID_Wisata" type="text" class="form-control" id="exampleInputUsername1" placeholder="ID Wisata">
+                      <input value="{{ $model->wisata_id }}" name="wisata_id" type="text" class="form-control" id="exampleInputUsername1" placeholder="ID Wisata">
                     </div>
                     <div class="form-group">
                       <label for="exampleInputUsername1">Tanggal Kunjungan</label>

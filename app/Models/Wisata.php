@@ -22,4 +22,14 @@ class wisata extends Model
         return $this->belongsTo('App\Models\Pemesanan');
     }
 
+    public function resi()
+    {
+        return $this->belongsTo('App\Models\Resi');
+    }
+
+    public function tiket()
+    {
+        return $this->belongsTo('App\Models\Tiket');
+    }
+
 }

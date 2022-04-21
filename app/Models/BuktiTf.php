@@ -9,10 +9,27 @@ class BuktiTf extends Model
 {
     use HasFactory;
     public $table = "bukti_transaksi";
-    protected $primaryKey = 'ID_BuktiTransaksi';
+    protected $primaryKey = 'id';
     protected $fillable = [
-        'ID_User',
-        'ID_ResiPembayara',
+        'users_id',
+        'resi_id',
         'foto',
     ];
+
+    public function resi()
+    {
+        // return $this->belongsTo('Model', 'foreign_key', 'owner_key'); 
+        return $this->belongsTo('App\Models\Resi','resi_id','id');
+    }
+
+    public function user()
+    {
+        // return $this->belongsTo('Model', 'foreign_key', 'owner_key'); 
+        return $this->belongsTo('App\Models\User','users_id','id');
+    }
+
+    public function tiket()
+    {
+        return $this->belongsTo('App\Models\Tiket');
+    }
 }

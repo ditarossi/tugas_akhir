@@ -14,14 +14,14 @@ class Tiket extends Migration
     public function up()
     {
         Schema::create('tiket', function (Blueprint $table) {
-            $table->id('ID_Tiket');
-            $table->string('ID_Pemesanan');
-            $table->string('ID_user'); 
-            $table->string('ID_ResiPembayaran'); 
-            $table->string('ID_BuktiTransaksi'); 
-            $table->string('ID_Wisata'); 
+            $table->id();
+            $table->foreignID('pemesanan_id');
+            $table->foreignID('users_id'); 
+            $table->foreignID('resi_id'); 
+            $table->foreignID('bukti_transaksi_id'); 
+            $table->foreignID('wisata_id'); 
+            $table->foreignID('fasilitas_id'); 
             $table->date('Tanggal_Kunjungan'); 
-            $table->text('fasilitas'); 
             $table->integer('jumlah'); 
             $table->string('status_pembayaran');    
             $table->timestamps();
