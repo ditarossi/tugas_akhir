@@ -96,8 +96,8 @@
                 <div class="action_btns">
                     <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
                     <div class="one_half">
-                            <input type="submit" name="login" value="Sumbit">
-                        </div>
+                            <input class="btn btn_red" type="submit" name="login" value="Sumbit">
+                    </div>
                 </div>
             </form>
 
