@@ -9,15 +9,17 @@
               <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
                 <div class="row">
                   <div class="col-lg-12">
-                    <h2>Desa Wisata Pusur</h2>
-                    <p>Chain App Dev is an app landing page HTML5 template based on Bootstrap v5.1.3 CSS layout provided by TemplateMo, a great website to download free CSS templates.</p>
+                    <h2>Pusur Institute</h2>
+                    <p>Merupakan wadah kolaborasi parapihak yang memiliki kepedulian terhadap pelestarian Sungai Pusur.
+                    Penggunaan istilah Institut adalah untuk memfokuskan wadah yang khusus bergerak dalam pelestarian Sungai Pusur
+                    </p>
                   </div>
                   <div class="col-lg-12">
                     <div class="white-button first-button scroll-to-section">
-                      <a href="#contact">Free Quote <i class="fab fa-apple"></i></a>
+                      <a href="#contact">Instagram<i class="fab fa-apple"></i></a>
                     </div>
                     <div class="white-button scroll-to-section">
-                      <a href="#contact">Free Quote <i class="fab fa-google-play"></i></a>
+                      <a href="#contact">WhatsApp<i class="fab fa-google-play"></i></a>
                     </div>
                   </div>
                 </div>
@@ -39,9 +41,9 @@
       <div class="row">
         <div class="col-lg-8 offset-lg-2">
           <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
-            <h4>Visi dan Misi</h4>
+            <h4>Visi</h4>
             <img src="{{asset('layout')}}/assets/images/heading-line-dec.png" alt="">
-            <p>If you need the greatest collection of HTML templates for your business, please visit <a rel="nofollow" href="https://www.toocss.com/" target="_blank">TooCSS</a> Blog. If you need to have a contact form PHP script, go to <a href="https://templatemo.com/contact" target="_parent">our contact page</a> for more information.</p>
+            <p>Harmonisasi Berbagai Kepentingan Terhadap Pelestarian Sub-das Pusur</p>
           </div>
         </div>
       </div>
@@ -52,7 +54,7 @@
           <div class="service-item first-service">
             <div class="icon"></div>
             <h4>Sejarah</h4>
-            <p>You are not allowed to redistribute this template ZIP file on any other website.</p>
+            <p>13 Februari 2016, “Grebeg Sungai”  inisiatif Pemerintah Kec. Polanharjo sebagai momentum aksi kolektif.“ dan dimulainya cikal bakal PUSUR INSTITUTE</p>
             <div class="text-button">
               <a href="/sejarah">Read More <i class="fa fa-arrow-right"></i></a>
             </div>
@@ -62,7 +64,8 @@
           <div class="service-item second-service">
             <div class="icon"></div>
             <h4>Struktur Organisasi</h4>
-            <p>You are allowed to use the Chain App Dev HTML template. Feel free to modify or edit this layout.</p>
+            <p>Pemerintah Kecamatan Polanharjo, LPTP Surakarta, Komunitas Peduli Sungai Bank Sampah dan Petani, Gita Pertiwi,
+              Lestari, SSK, PT. TIV Klaten, Akademisi UNS & UGM</p>
             <div class="text-button">
               <a href="/struktur">Read More <i class="fa fa-arrow-right"></i></a>
             </div>
@@ -71,8 +74,9 @@
         <div class="col-lg-3">
           <div class="service-item third-service">
             <div class="icon"></div>
-            <h4>Komunitas</h4>
-            <p>If this template is beneficial for your work, please support us <a rel="nofollow" href="https://paypal.me/templatemo" target="_blank">a little via PayPal</a>. Thank you.</p>
+            <h4>Kegiatan</h4>
+            <p>Program kali bersih melalui pengelolaan sampah terpadu di 4 desa,
+            Program River Care melalui pengembangan wisata tubing, Sekolah Lapang Petani/ Pendidikan Pertanian</p>
             <div class="text-button">
               <a href="/komunitas">Read More <i class="fa fa-arrow-right"></i></a>
             </div>
@@ -82,7 +86,8 @@
           <div class="service-item fourth-service">
             <div class="icon"></div>
             <h4>Kerjasama</h4>
-            <p>Lorem ipsum dolor consectetur adipiscing elit sedder williamsburg photo booth quinoa and fashion axe.</p>
+            <p>Lorem ipsum dolor consectetur adipiscing elit sedder williamsburg photo booth quinoa and fashion axe.
+            williamsburg photo booth quinoa and fashion axe.</p>
             <div class="text-button">
               <a href="/kerjasama">Read More <i class="fa fa-arrow-right"></i></a>
             </div>
@@ -470,7 +475,9 @@
           <div class="section-heading" align="center">
             <h4>Pemesanan Wisata</h4>
             <img src="{{asset('layout')}}/assets/images/heading-line-dec.png" alt="">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eismod tempor incididunt ut labore et dolore magna.</p>
+            <div class="border-button">
+              <a href="#">Order Now</a>
+            </div>
           </div>
         </div>
       </div>

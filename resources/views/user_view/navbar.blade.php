@@ -12,7 +12,7 @@
             <ul class="nav">
               <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
               <!--<li class="scroll-to-section"><a href="#services">History</a></li>-->
-              <li class="scroll-to-section"><a href="#services">Visi Misi</a></li>
+              <li class="scroll-to-section"><a href="#services">Visi</a></li>
               <!--<li class="scroll-to-section"><a href="#pricing">Struktur Organisasi</a></li>-->
               <li class="scroll-to-section"><a href="#pricing">Wisata</a></li>
               <li class="scroll-to-section"><a href="#order">Pemesanan</a></li>
@@ -22,6 +22,16 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Update Profile') }}
+                                    </a>
+                                    <a class="dropdown-item" href="#"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Riwayat Pemesanan') }}
+                                    </a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -32,8 +42,8 @@
                                         @csrf
                                     </form>
                                 </div>
-                            </li>
-            </ul>        
+              </li>
+          </ul>        
             <a class='menu-trigger'>
                 <span>Menu</span>
             </a>
