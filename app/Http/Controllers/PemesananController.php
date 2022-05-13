@@ -47,7 +47,7 @@ class PemesananController extends Controller
         $model = new Pemesanan;
         $model->users_id = $request->users_id;
         $model->wisata_id = $request->wisata_id;
-        $model->fasilitas_id = $request->fasilitas+id;
+        $model->fasilitas_id = $request->fasilitas_id;
         $model->Tanggal_Kunjungan = $request->Tanggal_Kunjungan;
         $model->jumlah = $request->jumlah;
         $model->tagihan = $request->tagihan;

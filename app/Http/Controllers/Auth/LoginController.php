@@ -49,19 +49,23 @@ class LoginController extends Controller
 
         if(auth()->attempt(array('email' => $input['email'], 'password' => $input['password'])))
         {
-            if(auth()->user()->is_admin == 1){
+            if(auth()->user()->is_admin == 1)
+            {
                 return redirect()->route('admin');
-            } else {
+            } else if (auth()->user()->is_admin == 0)
+            {
                 return redirect()->route('user_view');
+            } else {
+                return redirect()->route('/');
             }
         } else {
-            return redirect()->route('login')->with('error','email dan password salah');
+            return redirect()->route('/')->with('error','email dan password salah');
         }
     }
 
     public function logout(Request $request) {
         Auth::logout();
-        return view('landing.isi');
+        return redirect('/');
       }
 }
 

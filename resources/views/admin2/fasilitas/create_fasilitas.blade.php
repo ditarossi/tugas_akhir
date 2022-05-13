@@ -1,6 +1,6 @@
 @extends('admin2.v_template')
 @section('title')
-<title>Create Bukti Transaksi</title>
+<title>Create Fasilitas</title>
 @endsection
 
 @section('content')

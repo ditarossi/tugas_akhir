@@ -39,8 +39,22 @@ Route::view('/kerjasama1', 'landing.kerjasama');
 Auth::routes();
 //Route::view('user_view', 'user_view.isi');
 Route::get('/login', [App\Http\Controllers\Auth\LoginController::class, 'login']);
-Route::get('/admin', [App\Http\Controllers\HomeController::class, 'admin'])->name('admin')->middleware('is_admin');
-Route::get('/user_view', [App\Http\Controllers\HomeController::class,'index'])->name('user_view');
+//Route::get('/admin', [App\Http\Controllers\AdminControllers::class, 'index'])->name('admin')->middleware('is_admin');
+//Route::get('/user_view', [App\Http\Controllers\HomeController::class,'index'])->name('user_view')->middleware('is_user');
+
+Route::group([
+    'middleware' => ['auth', 'is_admin'],
+], function() {
+    Route::get('/admin', [App\Http\Controllers\AdminControllers::class, 'index'])->name('admin');
+}
+);
+
+Route::group([
+    'middleware' => ['auth', 'is_user'],
+], function() {
+    Route::get('/user_view', [App\Http\Controllers\HomeController::class, 'index'])->name('user_view');
+}
+);
 
 //user
 //Route::view('/user_view', 'user_view.isi');
@@ -50,8 +64,8 @@ Route::view('/komunitas', 'user_view.komunitas');
 Route::view('/kerjasama', 'user_view.kerjasama');
 
 //dashboard
-Route::view('/template2', 'admin2.isi');
-Route::view('/admin2', 'admin2.isi');
+// Route::view('/template2', 'admin2.isi');
+// Route::view('/admin2', 'admin2.isi');
 
 //CRUD USER
 Route::resource('tbl_user', '\App\Http\Controllers\UserController');

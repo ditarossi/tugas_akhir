@@ -5,7 +5,7 @@ namespace App\Http\Middleware;
 use Closure;
 use Illuminate\Http\Request;
 
-class IsAdmin
+class isUser
 {
     /**
      * Handle an incoming request.
@@ -16,13 +16,10 @@ class IsAdmin
      */
     public function handle(Request $request, Closure $next)
     {
-        if(auth()->user()->is_admin == 1){
+        if(auth()->user()->is_admin == 0){
             return $next($request);
         }
         //return $next($request);
         return redirect('/logout')->with('error', 'Anda Tidak Dapat Mengakses Halaman Ini');
     }
 }
-
-//1. home -> user_view.isi
-//. 
