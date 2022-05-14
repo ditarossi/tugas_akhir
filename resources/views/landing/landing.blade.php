@@ -106,17 +106,22 @@
 
         <!-- Register Form -->
         <div class="user_register">
-            <form>
+            <form method="POST" action="{{ url('/register') }}" enctype="multipart/form-data">
+            @csrf    
                 <label>Full Name</label>
-                <input type="text" />
+                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus/>
                 <br />
 
                 <label>Email Address</label>
-                <input type="email" />
+                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email"/>
                 <br />
 
                 <label>Password</label>
-                <input type="password" />
+                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password" />
+                <br />
+
+                <label>Konfirmasi Password</label>
+                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password" />
                 <br />
 
                 <div class="checkbox">
@@ -126,7 +131,9 @@
 
                 <div class="action_btns">
                     <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
-                    <div class="one_half last"><a href="#" class="btn btn_red">Register</a></div>
+                        <button type="submit" name="register" class="btn btn_red">
+                            Register
+                        </button>
                 </div>
             </form>
         </div>
