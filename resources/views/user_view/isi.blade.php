@@ -56,10 +56,29 @@
             <h4>Sejarah</h4>
             <p>13 Februari 2016, “Grebeg Sungai”  inisiatif Pemerintah Kec. Polanharjo sebagai momentum aksi kolektif.“ dan dimulainya cikal bakal PUSUR INSTITUTE</p>
             <div class="text-button">
-              <a href="/sejarah">Read More <i class="fa fa-arrow-right"></i></a>
+              <a data-bs-toggle="modal" data-bs-target="#showsejarah">Read More <i class="fa fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
+         <!-- Modal -->
+         <div class="modal fade" id="showsejarah" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="col-lg-3">
           <div class="service-item second-service">
             <div class="icon"></div>
@@ -67,10 +86,29 @@
             <p>Pemerintah Kecamatan Polanharjo, LPTP Surakarta, Komunitas Peduli Sungai Bank Sampah dan Petani, Gita Pertiwi,
               Lestari, SSK, PT. TIV Klaten, Akademisi UNS & UGM</p>
             <div class="text-button">
-              <a href="/struktur">Read More <i class="fa fa-arrow-right"></i></a>
+              <a data-bs-toggle="modal" data-bs-target="#showso">Read More <i class="fa fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
+        <!-- Modal -->
+        <div class="modal fade" id="showso" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="col-lg-3">
           <div class="service-item third-service">
             <div class="icon"></div>
@@ -78,10 +116,29 @@
             <p>Program kali bersih melalui pengelolaan sampah terpadu di 4 desa,
             Program River Care melalui pengembangan wisata tubing, Sekolah Lapang Petani/ Pendidikan Pertanian</p>
             <div class="text-button">
-              <a href="/komunitas">Read More <i class="fa fa-arrow-right"></i></a>
+              <a data-bs-toggle="modal" data-bs-target="#showkegiatan">Read More <i class="fa fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
+        <!-- Modal -->
+        <div class="modal fade" id="showkegiatan" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="col-lg-3">
           <div class="service-item fourth-service">
             <div class="icon"></div>
@@ -89,10 +146,29 @@
             <p>Lorem ipsum dolor consectetur adipiscing elit sedder williamsburg photo booth quinoa and fashion axe.
             williamsburg photo booth quinoa and fashion axe.</p>
             <div class="text-button">
-              <a href="/kerjasama">Read More <i class="fa fa-arrow-right"></i></a>
+              <a data-bs-toggle="modal" data-bs-target="#showkerjasama">Read More <i class="fa fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
+        <!-- Modal -->
+        <div class="modal fade" id="showkerjasama" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
@@ -407,19 +483,20 @@
         @foreach($datas as $d)
         <div class="col-lg-4">
           <div class="pricing-item-regular">
-            <h4>{{$d->nama_wisata}}</h4>
             <div class="icon">
               <img src="{{asset('layout')}}/assets/images/pricing-table-01.png" alt="">
             </div>
             <ul>
               <!-- <li>Lorem Ipsum Dolores</li>
               <li>20 TB of Storage</li> -->
-              <li class="function">Sisa Kuota = {{$d->kuota}}</li>
+              <h4>{{$d->nama_wisata}}</h4>
               <li class="function">Harga Tiket = {{$d->harga}}</li>
-              <li class="function">Status = {{$d->keterangan}}</li>
+              <li class="function">Sisa Kuota = {{$d->kuota}}</li>
+              <!-- <li class="function">Status = {{$d->keterangan}}</li> -->
             </ul>
             <div class="border-button">
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#showdetail">Show Detail</button>
+              <a href="#modal" data-bs-toggle="modal" data-bs-target="#showdetail">Show Detail</a>
+              <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#showdetail">Show Detail</button> -->
             </div>
           </div>
         </div>
@@ -455,7 +532,8 @@
             <h4>Pemesanan Wisata</h4>
             <img src="{{asset('layout')}}/assets/images/heading-line-dec.png" alt="">
             <div class="border-button">
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Order Now</button>
+              <a href="#modal" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Order Now</a>
+              <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Order Now</button> -->
             </div>
           </div>
         </div>
@@ -474,12 +552,24 @@
       <div class="modal-body">
         <form>
           <div class="mb-3">
-            <label for="recipient-name" class="col-form-label">Recipient:</label>
-            <input type="text" class="form-control" id="recipient-name">
+            <label>Nama Wisata</label>
+            <input type="text" class="form-control" id="nama_wisata">
           </div>
           <div class="mb-3">
-            <label for="message-text" class="col-form-label">Message:</label>
-            <textarea class="form-control" id="message-text"></textarea>
+            <label>Fasilitas</label>
+            <textarea class="form-control" id="fasilitas"></textarea>
+          </div>
+          <div class="mb-3">
+            <label>Tanggal Kunjungan</label>
+            <textarea class="form-control" id="Tanggal_Kunjungan"></textarea>
+          </div>
+          <div class="mb-3">
+            <label>Jumlah</label>
+            <textarea class="form-control" id="jumlah"></textarea>
+          </div>
+          <div class="mb-3">
+            <label>Tagihan</label>
+            <textarea class="form-control" id="tagihan"></textarea>
           </div>
         </form>
       </div>
