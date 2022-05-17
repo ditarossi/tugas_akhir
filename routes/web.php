@@ -64,6 +64,9 @@ Route::resource('tbl_fasilitas', '\App\Http\Controllers\FasilitasController');
 //CRUD WISATA
 Route::resource('tbl_wisata', '\App\Http\Controllers\WisataControllers');
 
+//CRUD DETAIL
+Route::resource('tbl_detail', '\App\Http\Controllers\DetailController');
+
 //CRUD PEMESANAN
 Route::resource('tbl_pemesanan', '\App\Http\Controllers\PemesananController');
 
