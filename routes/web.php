@@ -18,16 +18,18 @@ use App\Http\Controllers\Auth\LoginController;
 |
 */
 
-Route::get('/', function () {
-    return view('landing.isi');
-});
+// Route::get('/', function () {
+//     return view('landing.isi');
+// });
+
+Route::get('/', [App\Http\Controllers\LandingController::class, 'index']);
 
 //masyarakat umum
-Route::view('/landing', 'landing.isi');
-Route::view('/sejarah1', 'landing.sejarah');
-Route::view('/struktur1', 'landing.struktur');
-Route::view('/komunitas1', 'landing.komunitas');
-Route::view('/kerjasama1', 'landing.kerjasama');
+// Route::view('/landing', 'landing.isi');
+// Route::view('/sejarah1', 'landing.sejarah');
+// Route::view('/struktur1', 'landing.struktur');
+// Route::view('/komunitas1', 'landing.komunitas');
+// Route::view('/kerjasama1', 'landing.kerjasama');
 
 //LOGIN === REGISTER
 Auth::routes();
@@ -50,10 +52,10 @@ Route::group([
 
 //user
 //Route::view('/user_view', 'user_view.isi');
-Route::view('/sejarah', 'user_view.sejarah');
-Route::view('/struktur', 'user_view.struktur');
-Route::view('/komunitas', 'user_view.komunitas');
-Route::view('/kerjasama', 'user_view.kerjasama');
+// Route::view('/sejarah', 'user_view.sejarah');
+// Route::view('/struktur', 'user_view.struktur');
+// Route::view('/komunitas', 'user_view.komunitas');
+// Route::view('/kerjasama', 'user_view.kerjasama');
 
 //CRUD USER
 Route::resource('tbl_user', '\App\Http\Controllers\UserController');

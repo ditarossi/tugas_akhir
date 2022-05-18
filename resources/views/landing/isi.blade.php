@@ -56,46 +56,119 @@
             <h4>Sejarah</h4>
             <p>13 Februari 2016, “Grebeg Sungai”  inisiatif Pemerintah Kec. Polanharjo sebagai momentum aksi kolektif.“ dan dimulainya cikal bakal PUSUR INSTITUTE</p>
             <div class="text-button">
-              <a href="/sejarah1">Read More <i class="fa fa-arrow-right"></i></a>
+              <a data-bs-toggle="modal" data-bs-target="#showsejarah">Read More <i class="fa fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
+         <!-- Modal -->
+         <div class="modal fade" id="showsejarah" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias earum provident blanditiis quaerat quibusdam, molestiae, architecto, vel repellendus placeat nemo excepturi. Odio a in maxime, cupiditate ipsum vero nesciunt voluptates.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="col-lg-3">
           <div class="service-item second-service">
             <div class="icon"></div>
             <h4>Struktur Organisasi</h4>
             <p>Pemerintah Kecamatan Polanharjo, LPTP Surakarta, Komunitas Peduli Sungai Bank Sampah dan Petani, Gita Pertiwi,
-              Lestari, SSK, PT. TIV Klaten, Akademisi UNS & UGM
-            </p>
+              Lestari, SSK, PT. TIV Klaten, Akademisi UNS & UGM</p>
             <div class="text-button">
-              <a href="/struktur1">Read More <i class="fa fa-arrow-right"></i></a>
+              <a data-bs-toggle="modal" data-bs-target="#showso">Read More <i class="fa fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
+        <!-- Modal -->
+        <div class="modal fade" id="showso" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nobis accusantium recusandae quidem quaerat, magnam a delectus debitis, consectetur, ea incidunt quisquam architecto tempora nostrum. Ullam ad rerum minima exercitationem.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="col-lg-3">
           <div class="service-item third-service">
             <div class="icon"></div>
             <h4>Kegiatan</h4>
             <p>Program kali bersih melalui pengelolaan sampah terpadu di 4 desa,
-            Program River Care melalui pengembangan wisata tubing, Sekolah Lapang Petani/ Pendidikan Pertanian
-            </p>
+            Program River Care melalui pengembangan wisata tubing, Sekolah Lapang Petani/ Pendidikan Pertanian</p>
             <div class="text-button">
-              <a href="/komunitas1">Read More <i class="fa fa-arrow-right"></i></a>
+              <a data-bs-toggle="modal" data-bs-target="#showkegiatan">Read More <i class="fa fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
+        <!-- Modal -->
+        <div class="modal fade" id="showkegiatan" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati perspiciatis magni ad voluptatem laudantium, nostrum iure sunt dolores ducimus, accusantium at architecto possimus, similique ut quidem ea odio. Provident, consequuntur.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="col-lg-3">
           <div class="service-item fourth-service">
             <div class="icon"></div>
             <h4>Kerjasama</h4>
             <p>Lorem ipsum dolor consectetur adipiscing elit sedder williamsburg photo booth quinoa and fashion axe.
-            williamsburg photo booth quinoa and fashion axe.
-            </p>
+            williamsburg photo booth quinoa and fashion axe.</p>
             <div class="text-button">
-              <a href="/kerjasama1">Read More <i class="fa fa-arrow-right"></i></a>
+              <a data-bs-toggle="modal" data-bs-target="#showkerjasama">Read More <i class="fa fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
+        <!-- Modal -->
+        <div class="modal fade" id="showkerjasama" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt incidunt odio consectetur corporis! Sunt molestiae laboriosam mollitia dicta ex aspernatur nihil harum illum, repellat maiores commodi perferendis, accusamus aliquid ad.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
@@ -408,7 +481,47 @@
           </div>
         </div>
 
+        @foreach($datas as $d)
         <div class="col-lg-4">
+          <div class="pricing-item-regular">
+            <div class="icon">
+              <img src="{{asset('layout')}}/assets/images/pricing-table-01.png" alt="">
+            </div>
+            <ul>
+              <!-- <li>Lorem Ipsum Dolores</li>
+              <li>20 TB of Storage</li> -->
+              <h4>{{$d->nama_wisata}}</h4>
+              <li class="function">Harga Tiket = {{$d->harga}}</li>
+              <li class="function">Sisa Kuota = {{$d->kuota}}</li>
+              <!-- <li class="function">Status = {{$d->keterangan}}</li> -->
+            </ul>
+            <div class="border-button">
+              <a href="#modal" data-bs-toggle="modal" data-bs-target="#showdetail">Show Detail</a>
+              <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#showdetail">Show Detail</button> -->
+            </div>
+          </div>
+        </div>
+        @endforeach
+        <!-- Modal -->
+        <div class="modal fade" id="showdetail" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="col-lg-4">
           <div class="pricing-item-regular">
             <span class="price">$12</span>
             <h4>Standard Plan App</h4>
@@ -432,7 +545,7 @@
 
         </div>
 
-        <!-- <div class="col-lg-4">
+        <div class="col-lg-4">
           <div class="pricing-item-regular">
             <span class="price">$25</span>
             <h4>Business Plan App</h4>
