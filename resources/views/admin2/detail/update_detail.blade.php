@@ -16,7 +16,12 @@
                       <input type="hidden" name="_method" value="PATCH">
                     <div class="form-group">
                       <label for="exampleInputUsername1">ID Wisata</label>
-                      <input value="{{ $model->wisata_id }}" name="wisata_id" type="text" class="form-control" id="exampleInputUsername1" placeholder="ID Wisata">
+                      <select value="{{ $model->wisata_id }}" name="wisata_id" type="text" class="form-control" id="exampleInputUsername1" placeholder="ID Wisata">
+                        <option value="{{$model->wisata_id}}">{{ $model->wisata->nama_wisata }}</option>
+                        @foreach ($wisatas as $item)
+                        <option value="{{$item->id}}">{{$item->nama_wisata}}</option>
+                        @endforeach
+                      </select>
                     </div>
                     <div class="form-group">
                       <label for="#">Fasilitas</label>

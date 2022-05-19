@@ -15,11 +15,22 @@
                       @csrf
                     <div class="form-group">
                       <label for="exampleInputUsername1">ID Wisata</label>
-                      <input name="wisata_id" type="text" class="form-control" id="exampleInputUsername1" placeholder="ID Wisata">
+                      <select name="wisata_id" type="text" class="form-control" id="exampleInputUsername1" placeholder="ID Wisata">
+                        <option value=""> -- Pilih --</option>
+                        @foreach ($wisatas as $item)
+                        <option value="{{$item->id}}">{{$item->nama_wisata}}</option>
+                        @endforeach
+                      </select>
                     </div>
                     <div class="form-group">
                       <label for="#">Fasilitas</label>
-                      <input name="fasilitas_id" type="text" class="form-control" id="#" placeholder="Fasilitas">
+                      <!-- <input name="fasilitas_id" type="text" class="form-control" id="#" placeholder="Fasilitas"> -->
+                        @foreach ($fas as $f)
+                        <div class="form-check form-check-inline">
+                          <input name="fasilitas_id" class="form-check-input" type="checkbox" id="inlineCheckbox1" value="{{$f->id}}">
+                          <label class="form-check-label" for="inlineCheckbox1">{{$f->fasilitas}}</label>
+                        </div>
+                        @endforeach
                     </div>
                     <div class="form-group">
                       <label for="exampleInputUsername1">Deskripsi</label>

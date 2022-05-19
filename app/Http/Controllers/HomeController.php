@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Wisata;
+use App\Models\Detail;
 
 class HomeController extends Controller
 {
@@ -25,19 +26,10 @@ class HomeController extends Controller
     public function index()
     {
         $datas = Wisata::all();
+        $detail = Detail::all();
         return view('user_view.isi', compact(
-            'datas'
+            'datas', 'detail'
         ));
     }
 
-    // public function admin()
-    // {
-    //     return view('admin2.isi');
-    // }
-
-
-
 }
-
-//1. home -> user_view.isi
-//2. admin -> admin.dashboard

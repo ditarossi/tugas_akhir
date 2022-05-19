@@ -509,9 +509,20 @@
                 <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
+
+              <!-- BELUM DETAIL PER WISATA -->
               <div class="modal-body">
-                ...
+                @foreach($detail as $a )
+                      <ul>
+                        <h4>{{$a->wisata->nama_wisata}}</h4>
+                        <h4>{{$a->fasilitas->fasilitas}}</h4>
+                        <h4>{{$a->deskripsi}}</h4>
+                        <h4>{{$a->keterangan}}</h4>
+                        <h4>{{$a->foto}}</h4>
+                      </ul>
+                @endforeach
               </div>
+              
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 <button type="button" class="btn btn-primary">Save changes</button>

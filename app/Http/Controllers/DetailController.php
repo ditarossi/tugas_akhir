@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Detail;
+use App\Models\Wisata;
+use App\Models\Fasilitas;
 
 use Illuminate\Http\Request;
 
@@ -29,8 +31,10 @@ class DetailController extends Controller
     public function create()
     {
         $model = new Detail;
+        $wisatas = Wisata::all();
+        $fas = Fasilitas::all();
         return view('admin2.detail.create_detail', compact(
-            'model'
+            'model', 'wisatas', 'fas'
         ));
     }
 
@@ -73,8 +77,9 @@ class DetailController extends Controller
     public function edit($id)
     {
         $model = Detail::find($id);
+        $wisatas = Wisata::all();
         return view('admin2.detail.update_detail', compact(
-            'model'
+            'model', 'wisatas'
         ));
     }
 
