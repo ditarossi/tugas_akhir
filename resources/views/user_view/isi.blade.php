@@ -487,49 +487,39 @@
               <img src="{{asset('layout')}}/assets/images/pricing-table-01.png" alt="">
             </div>
             <ul>
-              <!-- <li>Lorem Ipsum Dolores</li>
-              <li>20 TB of Storage</li> -->
               <h4>{{$d->nama_wisata}}</h4>
               <li class="function">Harga Tiket = {{$d->harga}}</li>
               <li class="function">Sisa Kuota = {{$d->kuota}}</li>
-              <!-- <li class="function">Status = {{$d->keterangan}}</li> -->
             </ul>
             <div class="border-button">
-              <a href="#modal" data-bs-toggle="modal" data-bs-target="#showdetail">Show Detail</a>
-              <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#showdetail">Show Detail</button> -->
+              <a href="#modal" data-bs-toggle="modal" data-bs-target="#showdetail{{$d->id}}">Show Detail</a>
             </div>
           </div>
         </div>
+        <!--MODAL SHOW DETAIL -->
+        <div class="modal fade" id="showdetail{{$d->id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">{{$d->nama_wisata}}</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <li class="function">Foto = {{$d->foto}}</li>
+                  <li class="function">Fasilitas = {{$d->fasilitas->fasilitas}}</li>
+                  <li class="function">Deskripsi = {{$d->deskripsi}}</li>
+                  <li class="function">Sisa Kuota = {{$d->kuota}}</li>
+                  <li class="function">Harga = {{$d->harga}}</li>
+                  <li class="function">Keterangan = {{$d->keterangan}}</li>
+                </div>               
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button href="#modal" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap" type="button" class="btn btn-primary">Order Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
         @endforeach
-        <!-- Modal -->
-        <div class="modal fade" id="showdetail" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-
-              <!-- BELUM DETAIL PER WISATA -->
-              <div class="modal-body">
-                @foreach($detail as $a )
-                      <ul>
-                        <h4>{{$a->wisata->nama_wisata}}</h4>
-                        <h4>{{$a->fasilitas->fasilitas}}</h4>
-                        <h4>{{$a->deskripsi}}</h4>
-                        <h4>{{$a->keterangan}}</h4>
-                        <h4>{{$a->foto}}</h4>
-                      </ul>
-                @endforeach
-              </div>
-              
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-              </div>
-            </div>
-          </div>
-        </div>
 
       </div>
     </div>
@@ -544,7 +534,6 @@
             <img src="{{asset('layout')}}/assets/images/heading-line-dec.png" alt="">
             <div class="border-button">
               <a href="#modal" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Order Now</a>
-              <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Order Now</button> -->
             </div>
           </div>
         </div>
@@ -564,23 +553,31 @@
         <form>
           <div class="mb-3">
             <label>Nama Wisata</label>
-            <input type="text" class="form-control" id="nama_wisata">
+            <select name="wisata_id" type="text" class="form-control" id="exampleInputUsername1" placeholder="Nama Wisata">
+              <option value=""> -- Pilih --</option>
+              @foreach ($datas as $d)
+              <option value="{{$d->id}}">{{$d->nama_wisata}}</option>
+              @endforeach
+            </select>
           </div>
           <div class="mb-3">
             <label>Fasilitas</label>
-            <textarea class="form-control" id="fasilitas"></textarea>
+            @foreach ($datas as $d)
+              <input name="fasilitas_id" class="form-check-input" type="checkbox" id="inlineCheckbox1" value="{{$d->id}}">
+              <label class="form-check-label" for="inlineCheckbox1">{{$d->fasilitas->fasilitas}}</label>
+            @endforeach
           </div>
           <div class="mb-3">
             <label>Tanggal Kunjungan</label>
-            <textarea class="form-control" id="Tanggal_Kunjungan"></textarea>
+            <input type="date" class="form-control" id="Tanggal_Kunjungan"></input>
           </div>
           <div class="mb-3">
             <label>Jumlah</label>
-            <textarea class="form-control" id="jumlah"></textarea>
+            <input type="text" class="form-control" id="jumlah"></input>
           </div>
           <div class="mb-3">
             <label>Tagihan</label>
-            <textarea class="form-control" id="tagihan"></textarea>
+            <input type="text" class="form-control" id="tagihan"></input>
           </div>
         </form>
       </div>

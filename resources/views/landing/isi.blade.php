@@ -488,19 +488,39 @@
               <img src="{{asset('layout')}}/assets/images/pricing-table-01.png" alt="">
             </div>
             <ul>
-              <!-- <li>Lorem Ipsum Dolores</li>
-              <li>20 TB of Storage</li> -->
               <h4>{{$d->nama_wisata}}</h4>
               <li class="function">Harga Tiket = {{$d->harga}}</li>
               <li class="function">Sisa Kuota = {{$d->kuota}}</li>
-              <!-- <li class="function">Status = {{$d->keterangan}}</li> -->
             </ul>
             <div class="border-button">
-              <a href="#modal" data-bs-toggle="modal" data-bs-target="#showdetail">Show Detail</a>
-              <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#showdetail">Show Detail</button> -->
+              <a href="#modal" data-bs-toggle="modal" data-bs-target="#showdetail{{$d->id}}">Show Detail</a>
             </div>
           </div>
         </div>
+
+        <!--MODAL SHOW DETAIL-->
+        <div class="modal fade" id="showdetail{{$d->id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">{{$d->nama_wisata}}</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <li class="function">Foto = {{$d->foto}}</li>
+                  <li class="function">Fasilitas = {{$d->fasilitas->fasilitas}}</li>
+                  <li class="function">Deskripsi = {{$d->deskripsi}}</li>
+                  <li class="function">Sisa Kuota = {{$d->kuota}}</li>
+                  <li class="function">Harga = {{$d->harga}}</li>
+                  <li class="function">Keterangan = {{$d->keterangan}}</li>
+                </div>               
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button href="#modal" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap" type="button" class="btn btn-primary">Order Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
         @endforeach
         <!-- Modal -->
         <div class="modal fade" id="showdetail" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

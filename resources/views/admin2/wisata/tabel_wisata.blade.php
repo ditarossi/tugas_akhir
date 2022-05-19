@@ -21,9 +21,12 @@
                       <thead>
                         <tr>
                             <th>Nama Wisata</th>
+                            <th>Fasilitas</th>
+                            <th>Deskripsi</th>
                             <th>Kuota</th>
                             <th>Harga</th>
                             <th>Keterangan</th>
+                            <th>Foto</th>
                             <th>Actions</th>
                         </tr>
                       </thead>
@@ -31,9 +34,12 @@
                         @foreach($datas as $value)
                         <tr>
                             <td>{{ $value->nama_wisata }}</td>
+                            <td>{{ $value->fasilitas->fasilitas }}</td>
+                            <td>{{ $value->deskripsi }}</td>
                             <td>{{ $value->kuota }}</td>
                             <td>{{ $value->harga }}</td>
                             <td>{{ $value->keterangan }}</td>
+                            <td>{{ $value->foto }}</td>
                             <td>
                               <a class="btn btn-outline-warning" href="{{ url('tbl_wisata/'.$value->id.'/edit') }}">Update</a>
                               <form action="{{ url('tbl_wisata/'.$value->id) }}" method="post">

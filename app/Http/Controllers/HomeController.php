@@ -26,9 +26,8 @@ class HomeController extends Controller
     public function index()
     {
         $datas = Wisata::all();
-        $detail = Detail::all();
         return view('user_view.isi', compact(
-            'datas', 'detail'
+            'datas'
         ));
     }
 

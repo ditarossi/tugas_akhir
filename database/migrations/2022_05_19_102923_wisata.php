@@ -16,9 +16,15 @@ class Wisata extends Migration
         Schema::create('wisata', function (Blueprint $table) {
             $table->id();
             $table->string('nama_wisata');
+
+            $table->foreignID('fasilitas_id');
+            $table->text('deskripsi'); 
+            
             $table->integer('kuota');  
             $table->char('harga', 15);  
-            $table->text('keterangan');     
+            $table->text('keterangan'); 
+
+            $table->string('foto');      
             $table->timestamps();
         });
     }

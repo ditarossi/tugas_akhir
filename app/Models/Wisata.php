@@ -12,9 +12,15 @@ class wisata extends Model
     protected $primaryKey = 'id';
     protected $fillable = [
         'nama_wisata',
+
+        'fasilitas_id',
+        'deskripsi',
+
         'kuota',
         'harga',
         'keterangan',
+
+        'foto',
     ];
 
     public function pemesanan()
@@ -30,6 +36,12 @@ class wisata extends Model
     public function tiket()
     {
         return $this->belongsTo('App\Models\Tiket');
+    }
+
+    public function fasilitas()
+    {
+        // return $this->belongsTo('Model', 'foreign_key', 'owner_key'); 
+        return $this->belongsTo('App\Models\Fasilitas','fasilitas_id','id');
     }
 
 }

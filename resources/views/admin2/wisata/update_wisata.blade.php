@@ -19,6 +19,17 @@
                       <input value="{{ $model->nama_wisata }}" name="nama_wisata" type="text" class="form-control" id="exampleInputUsername1" placeholder="Nama Wisata">
                     </div>
                     <div class="form-group">
+                      <label for="exampleInputUsername1">Fasilitas</label>
+                        @foreach ($fas as $f)
+                            <input name="fasilitas_id" class="form-check-input" type="checkbox" id="inlineCheckbox1" value="{{$f->id}}">
+                            <label class="form-check-label" for="inlineCheckbox1">{{$f->fasilitas}}</label>
+                        @endforeach
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputUsername1">Deskripsi</label>
+                      <input value="{{ $model->deskripsi }}" name="deskripsi" type="text" class="form-control" id="exampleInputUsername1" placeholder="Deskripsi">
+                    </div>
+                    <div class="form-group">
                       <label for="exampleInputPassword1">Kuota</label>
                       <input value="{{ $model->kuota }}" name="kuota" type="text" class="form-control" id="exampleInputPassword1" placeholder="Kuota">
                     </div>
@@ -29,6 +40,10 @@
                     <div class="form-group">
                       <label for="exampleInputConfirmPassword1">Keterangan</label>
                       <input value="{{ $model->keterangan }}" name="keterangan" type="text" class="form-control" id="exampleInputConfirmPassword1" placeholder="Keterangan">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputConfirmPassword1">Foto</label>
+                      <input value="{{ $model->foto }}" name="foto" type="text" class="form-control" id="exampleInputConfirmPassword1" placeholder="Foto">
                     </div>
                     <div class="form-check">
                       <label class="form-check-label text-muted">

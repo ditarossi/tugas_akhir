@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Wisata;
+use App\Models\Fasilitas;
 
 class WisataControllers extends Controller
 {
@@ -28,8 +29,9 @@ class WisataControllers extends Controller
     public function create()
     {
         $model = new Wisata;
+        $fas = Fasilitas::all();
         return view('admin2.wisata.create_wisata', compact(
-            'model'
+            'model','fas'
         ));
     }
 
@@ -43,9 +45,12 @@ class WisataControllers extends Controller
     {
         $model = new Wisata;
         $model->nama_wisata = $request->nama_wisata;
+        $model->fasilitas_id = $request->fasilitas_id;
+        $model->deskripsi = $request->deskripsi;
         $model->kuota = $request->kuota;
         $model->harga = $request->harga;
         $model->keterangan = $request->keterangan;
+        $model->foto = $request->foto;
         $model->save();
 
         return redirect('tbl_wisata');
@@ -72,8 +77,9 @@ class WisataControllers extends Controller
     {
         //dd($requst);
         $model = Wisata::find($id);
+        $fas = Fasilitas::all();
         return view('admin2.wisata.update_wisata', compact(
-            'model'
+            'model', 'fas'
         ));
     }
 
@@ -88,9 +94,12 @@ class WisataControllers extends Controller
     {
         $model = Wisata::find($id);
         $model->nama_wisata = $request->nama_wisata;
+        $model->fasilitas_id = $request->fasilitas_id;
+        $model->deskripsi = $request->deskripsi;
         $model->kuota = $request->kuota;
         $model->harga = $request->harga;
         $model->keterangan = $request->keterangan;
+        $model->foto = $request->foto;
         $model->save();
 
         return redirect('tbl_wisata');
