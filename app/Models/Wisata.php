@@ -12,14 +12,11 @@ class wisata extends Model
     protected $primaryKey = 'id';
     protected $fillable = [
         'nama_wisata',
-
         'fasilitas_id',
         'deskripsi',
-
         'kuota',
         'harga',
         'keterangan',
-
         'foto',
     ];
 

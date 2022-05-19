@@ -550,7 +550,8 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <form>
+        <form class="forms-sample" action="{{ url('tbl_pemesanan') }}" method="post">
+        @csrf
           <div class="mb-3">
             <label>Nama Wisata</label>
             <select name="wisata_id" type="text" class="form-control" id="exampleInputUsername1" placeholder="Nama Wisata">
@@ -569,21 +570,21 @@
           </div>
           <div class="mb-3">
             <label>Tanggal Kunjungan</label>
-            <input type="date" class="form-control" id="Tanggal_Kunjungan"></input>
+            <input name="Tanggal_Kunjungan" type="date" class="form-control" id="Tanggal_Kunjungan"></input>
           </div>
           <div class="mb-3">
             <label>Jumlah</label>
-            <input type="text" class="form-control" id="jumlah"></input>
+            <input name="jumlah" type="text" class="form-control" id="jumlah"></input>
           </div>
           <div class="mb-3">
             <label>Tagihan</label>
-            <input type="text" class="form-control" id="tagihan"></input>
+            <input name="tagihan" type="text" class="form-control" id="tagihan"></input>
           </div>
         </form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Send message</button>
+        <button type="submit" class="btn btn-primary">Send message</button>
       </div>
     </div>
   </div>

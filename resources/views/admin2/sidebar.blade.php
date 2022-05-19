@@ -25,12 +25,6 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/tbl_detail">
-              <i class="#"></i>
-              <span class="menu-title">Detail Wisata</span>
-            </a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="/tbl_pemesanan">
               <i class="#"></i>
               <span class="menu-title">Data Pemesanan</span>
