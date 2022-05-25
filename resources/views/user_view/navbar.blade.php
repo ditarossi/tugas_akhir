@@ -20,7 +20,7 @@
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                   {{ Auth::user()->name }}
                                 </a>
-                                @foreach($pemesanan as $r)
+                                @foreach($resi as $r)
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="#">
                                         {{ __('Update Profile') }}
@@ -74,7 +74,7 @@
                 </div>               
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <a class="btn btn-outline-warning" href="{{ url('cetak') }}">cetak pdf</a>
+                  <a class="btn btn-outline-warning" href="#">cetak pdf</a>
                   <!-- <button type="button" class="btn btn-secondary" href="{{ url('cetak') }}">Cetak PDF</button> -->
                 </div>
                 @endforeach

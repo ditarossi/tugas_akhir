@@ -29,18 +29,18 @@ class HomeController extends Controller
     public function index()
     {
         $datas = Wisata::all();
-        $pemesanan = Pemesanan::all();
+        $resi = Pemesanan::all();
         return view('user_view.isi', compact(
-            'datas', 'pemesanan'
+            'datas', 'resi'
         ));
     }
 
     public function download()
     {
-        $pemesanan = Pemesanan::all();
+        $resi = Resi::all();
         $datas = Wisata::all();
         $pdf = PDF::loadView('user_view.isi', [
-            'pemesanan'=> $pemesanan,
+            'resi'=> $resi,
             'datas'=>$datas,
         ]);
 

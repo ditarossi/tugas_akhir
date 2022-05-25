@@ -31,7 +31,7 @@ class ResiPembayaran extends Controller
      */
     public function create()
     {
-        $model = new Pemesanan;
+        $model = new Resi;
         return view('admin2.resi.create_resi', compact(
             'model'
         ));
@@ -45,7 +45,7 @@ class ResiPembayaran extends Controller
      */
     public function store(Request $request)
     {
-        $model = new Pemesanan;
+        $model = new Resi;
         $model->pemesanan_id = $request->pemesanan_id;
         $model->users_id = $request->users_id;
         $model->wisata_id = $request->wisata_id;
@@ -77,7 +77,7 @@ class ResiPembayaran extends Controller
      */
     public function edit($id)
     {
-        $model = Pemesanan::find($id);
+        $model = Resi::find($id);
         return view('admin2.resi.update_resi', compact(
             'model'
         ));
@@ -92,7 +92,7 @@ class ResiPembayaran extends Controller
      */
     public function update(Request $request, $id)
     {
-        $model = Pemesanan::find($id);
+        $model = Resi::find($id);
         $model->ID_Pemesanan = $request->ID_Pemesanan;
         $model->ID_User = $request->ID_User;
         $model->ID_Wisata = $request->ID_Wisata;
@@ -113,7 +113,7 @@ class ResiPembayaran extends Controller
      */
     public function destroy($id)
     {
-        $model = Pemesanan::find($id);
+        $model = Resi::find($id);
         $model->delete();
         return redirect('tbl_resi');
     }
