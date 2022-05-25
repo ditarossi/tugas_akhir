@@ -47,6 +47,7 @@ Route::group([
     'middleware' => ['auth', 'is_user'],
 ], function() {
     Route::get('/user_view', [App\Http\Controllers\HomeController::class, 'index'])->name('user_view');
+    Route::resource('pemesanan', '\App\Http\Controllers\Pemesanan_user');
 }
 );
 

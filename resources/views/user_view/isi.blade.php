@@ -546,11 +546,11 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Pemesanan</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <form class="forms-sample" action="{{ url('tbl_pemesanan') }}" method="post">
+        <form class="forms-sample" action="{{ url('pemesanan') }}" method="post">
         @csrf
           <div class="mb-3">
             <label>Nama Wisata</label>
@@ -580,11 +580,11 @@
             <label>Tagihan</label>
             <input name="tagihan" type="text" class="form-control" id="tagihan"></input>
           </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">Send message</button>
+          </div>
         </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-primary">Send message</button>
       </div>
     </div>
   </div>

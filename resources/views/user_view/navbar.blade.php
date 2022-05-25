@@ -20,17 +20,16 @@
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                   {{ Auth::user()->name }}
                                 </a>
-
+                                @foreach($resi as $r)
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
+                                    <a class="dropdown-item" href="#">
                                         {{ __('Update Profile') }}
                                     </a>
-                                    <a class="dropdown-item" href="#"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Riwayat Pemesanan') }}
+                                    <a class="dropdown-item" href="#modal" data-bs-toggle="modal" data-bs-target="#tiket">
+                                        {{ __('Cetak Tiket') }}
+                                    </a>
+                                    <a class="dropdown-item" href="#modal" data-bs-toggle="modal" data-bs-target="\">
+                                        {{ __('Riwayat Transaksi') }}
                                     </a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
@@ -43,13 +42,41 @@
                                     </form>
                                 </div>
               </li>
-          </ul>        
+          </ul>   
+               
             <a class='menu-trigger'>
                 <span>Menu</span>
             </a>
             <!-- ***** Menu End ***** -->
           </nav>
+
         </div>
+        
       </div>
     </div>
   </header>
+  <div class="modal fade" id="tiket" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Tiket Wisata</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <li class="function">ID Pemesanan = {{$r->pemesanan_id}}</li>
+                  <li class="function">Nama = {{$r->user->name}}</li>
+                  <li class="function">Wisata = {{$r->wisata->nama_wisata}}</li>
+                  <li class="function">Fasilitas = {{$r->fasilitas->fasilitas}}</li>
+                  <li class="function">Tanggal Kunjungan = {{$r->Tanggal_Kunjungan}}</li>
+                  <li class="function">Jumlah = {{$r->jumlah}}</li>
+                  <li class="function">Tagihan = {{$r->tagihan}}</li>
+                </div>               
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-secondary" href='#'>Cetak PDF</button>
+                </div>
+                @endforeach
+              </div>
+            </div>
+          </div>
