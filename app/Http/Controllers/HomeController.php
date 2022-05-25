@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Models\Wisata;
 use App\Models\Detail;
 use App\Models\Resi;
+use App\Models\Pemesanan;
+use PDF;
 
 class HomeController extends Controller
 {
@@ -27,10 +29,22 @@ class HomeController extends Controller
     public function index()
     {
         $datas = Wisata::all();
-        $resi = Resi::all();
+        $pemesanan = Pemesanan::all();
         return view('user_view.isi', compact(
-            'datas', 'resi'
+            'datas', 'pemesanan'
         ));
+    }
+
+    public function download()
+    {
+        $pemesanan = Pemesanan::all();
+        $datas = Wisata::all();
+        $pdf = PDF::loadView('user_view.isi', [
+            'pemesanan'=> $pemesanan,
+            'datas'=>$datas,
+        ]);
+
+        return $pdf->download('tiket.pdf');
     }
 
 }

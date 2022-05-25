@@ -13,13 +13,13 @@
               <div class="row">
                 <div class="col-12"></div>
                   <div class="table-responsive">
-                  <a class="btn btn-outline-success" href="{{ url('tbl_resi/create') }}">Tambah Data</a>
+                  <!-- <a class="btn btn-outline-success" href="{{ url('tbl_resi/create') }}">Tambah Data</a> -->
                     <br>
                     <br>
                     <table id="order-listing" class="table">
                       <thead>
                         <tr>
-                            <th>ID Pemesanan</th>
+                            <!-- <th>ID Pemesanan</th> -->
                             <th>ID User</th>
                             <th>ID Wisata</th>
                             <th>ID Fasilitas</th>
@@ -32,7 +32,7 @@
                       <tbody>
                         @foreach($datas as $value)
                         <tr>
-                            <td>{{ $value->pemesanan_id }}</td>
+                            <!-- <td>{{ $value->pemesanan_id }}</td> -->
                             <td>{{ $value->user->name }}</td>
                             <td>{{ $value->wisata->nama_wisata }}</td>
                             <td>{{ $value->fasilitas->fasilitas }}</td>
@@ -40,7 +40,7 @@
                             <td>{{ $value->jumlah }}</td>
                             <td>{{ $value->tagihan }}</td>
                             <td>
-                              <a class="btn btn-outline-warning" href="{{ url('tbl_resi/'.$value->id.'/edit') }}">Update</a>
+                              <!-- <a class="btn btn-outline-warning" href="{{ url('tbl_resi/'.$value->id.'/edit') }}">Update</a> -->
                               <form action="{{ url('tbl_resi/'.$value->id) }}" method="post">
                                 @csrf 
                                 <input type="hidden" name="_method" value="delete">

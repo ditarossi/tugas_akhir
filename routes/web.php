@@ -48,6 +48,7 @@ Route::group([
 ], function() {
     Route::get('/user_view', [App\Http\Controllers\HomeController::class, 'index'])->name('user_view');
     Route::resource('pemesanan', '\App\Http\Controllers\Pemesanan_user');
+    Route::get('cetak', [App\Http\Controllers\HomeController::class, 'download']);
 }
 );
 
