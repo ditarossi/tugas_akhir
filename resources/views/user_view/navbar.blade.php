@@ -2,6 +2,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
+        
           <nav class="main-nav">
             <!-- ***** Logo Start ***** -->
             <a href="index.html" class="logo">
@@ -9,6 +10,7 @@
             </a>
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
+            
             <ul class="nav">
               <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
               <!--<li class="scroll-to-section"><a href="#services">History</a></li>-->
@@ -17,10 +19,11 @@
               <li class="scroll-to-section"><a href="#pricing">Wisata</a></li>
               <li class="scroll-to-section"><a href="#order">Pemesanan</a></li>
               <li class="nav-item dropdown">
+              
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                   {{ Auth::user()->name }}
                                 </a>
-                                @foreach($resi as $r)
+                                
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="#">
                                         {{ __('Update Profile') }}
@@ -55,14 +58,15 @@
       </div>
     </div>
   </header>
+
   <div class="modal fade" id="tiket" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
               <div class="modal-content">
-                
                 <div class="modal-header">
                   <h5 class="modal-title" id="exampleModalLabel">Tiket Wisata</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
+                @foreach($resi as $r)
                 <div class="modal-body">
                   <!-- <li class="function">ID Pemesanan = {{$r->pemesanan_id}}</li> -->
                   <li class="function">Nama = {{$r->user->name}}</li>
@@ -81,3 +85,5 @@
               </div>
             </div>
           </div>
+  </div>
+</div>
