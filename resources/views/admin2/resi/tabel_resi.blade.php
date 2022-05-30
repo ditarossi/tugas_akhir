@@ -1,6 +1,6 @@
 @extends('admin2.v_template')
 @section('title')
-<title>Tabel Resi Pembayaran</title>
+<title>Tabel Tiket</title>
 @endsection
 
 @section('content')
@@ -13,7 +13,7 @@
               <div class="row">
                 <div class="col-12"></div>
                   <div class="table-responsive">
-                  <a class="btn btn-outline-success" href="{{ url('tbl_resi/create') }}">Tambah Data</a>
+                  
                     <br>
                     <br>
                     <table id="order-listing" class="table">
@@ -26,7 +26,8 @@
                             <th>Tanggal Kunjungan</th>
                             <th>Jumlah</th>
                             <th>Tagihan</th>
-                            <th>Actions</th>
+                            <th>Status Pembayaran</th>
+                            <!-- <th>Actions</th> -->
                         </tr>
                       </thead>
                       <tbody>
@@ -39,14 +40,15 @@
                             <td>{{ $value->Tanggal_Kunjungan }}</td>
                             <td>{{ $value->jumlah }}</td>
                             <td>{{ $value->tagihan }}</td>
-                            <td>
+                            <td>{{ $value->status_pembayaran }}</td>
+                            <!-- <td>
                               <a class="btn btn-outline-warning" href="{{ url('tbl_resi/'.$value->id.'/edit') }}">Update</a>
                               <form action="{{ url('tbl_resi/'.$value->id) }}" method="post">
                                 @csrf 
                                 <input type="hidden" name="_method" value="delete">
                                 <button class="btn btn-outline-danger" type="submit">Delete</button>
                               </form>
-                            </td>
+                            </td> -->
                         </tr>
                         @endforeach
                       </tbody>

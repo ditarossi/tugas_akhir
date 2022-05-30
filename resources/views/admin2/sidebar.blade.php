@@ -33,10 +33,10 @@
           <li class="nav-item">
             <a class="nav-link" href="/tbl_resi">
               <i class="#"></i>
-              <span class="menu-title">Resi Pembayaran</span>
+              <span class="menu-title">Tiket</span>
             </a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" href="/tbl_bukti">
               <i class="#"></i>
               <span class="menu-title">Bukti Transaksi</span>
@@ -47,6 +47,6 @@
               <i class="#"></i>
               <span class="menu-title">Data Tiket</span>
             </a>
-          </li>
+          </li> -->
         </ul>
       </nav>

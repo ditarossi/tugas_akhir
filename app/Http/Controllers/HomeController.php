@@ -4,8 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Wisata;
-use App\Models\Detail;
-use App\Models\Resi;
+// use App\Models\Detail;
+// use App\Models\Resi;
+use App\Models\Fasilitas;
 use App\Models\Pemesanan;
 use PDF;
 
@@ -29,22 +30,30 @@ class HomeController extends Controller
     public function index()
     {
         $datas = Wisata::all();
-        $resi = Pemesanan::all();
+        $f = Fasilitas::all();
         return view('user_view.isi', compact(
-            'datas', 'resi'
+            'datas', 'f'
         ));
     }
 
     public function download()
     {
-        $resi = Resi::all();
         $datas = Wisata::all();
         $pdf = PDF::loadView('user_view.isi', [
-            'resi'=> $resi,
             'datas'=>$datas,
         ]);
 
         return $pdf->download('tiket.pdf');
+    }
+
+    public function tiket()
+    {
+        $user = request()->user();
+
+        $tiket = Pemesanan::where('users_id', $user->id)->get();
+        return view('user_view.tiket', compact(
+            'tiket'
+        ));
     }
 
 }

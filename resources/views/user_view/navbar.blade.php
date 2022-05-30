@@ -25,15 +25,15 @@
                                 </a>
                                 
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">
+                                    <!-- <a class="dropdown-item" href="#">
                                         {{ __('Update Profile') }}
+                                    </a> -->
+                                    <a class="dropdown-item" href="{{ url('tiket') }}">
+                                        {{ __('Lihat Tiket') }}
                                     </a>
-                                    <a class="dropdown-item" href="#modal" data-bs-toggle="modal" data-bs-target="#tiket">
-                                        {{ __('Cetak Tiket') }}
-                                    </a>
-                                    <a class="dropdown-item" href="#modal" data-bs-toggle="modal" data-bs-target="\">
+                                    <!-- <a class="dropdown-item" href="#modal" data-bs-toggle="modal" data-bs-target="\">
                                         {{ __('Riwayat Transaksi') }}
-                                    </a>
+                                    </a> -->
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -58,32 +58,3 @@
       </div>
     </div>
   </header>
-
-  <div class="modal fade" id="tiket" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Tiket Wisata</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                @foreach($resi as $r)
-                <div class="modal-body">
-                  <!-- <li class="function">ID Pemesanan = {{$r->pemesanan_id}}</li> -->
-                  <li class="function">Nama = {{$r->user->name}}</li>
-                  <li class="function">Wisata = {{$r->wisata->nama_wisata}}</li>
-                  <li class="function">Fasilitas = {{$r->fasilitas->fasilitas}}</li>
-                  <li class="function">Tanggal Kunjungan = {{$r->Tanggal_Kunjungan}}</li>
-                  <li class="function">Jumlah = {{$r->jumlah}}</li>
-                  <li class="function">Tagihan = {{$r->tagihan}}</li>
-                </div>               
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <a class="btn btn-outline-warning" href="#">cetak pdf</a>
-                  <!-- <button type="button" class="btn btn-secondary" href="{{ url('cetak') }}">Cetak PDF</button> -->
-                </div>
-                @endforeach
-              </div>
-            </div>
-          </div>
-  </div>
-</div>
