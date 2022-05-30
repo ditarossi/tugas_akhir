@@ -24,13 +24,6 @@ use App\Http\Controllers\Auth\LoginController;
 
 Route::get('/', [App\Http\Controllers\LandingController::class, 'index']);
 
-//masyarakat umum
-// Route::view('/landing', 'landing.isi');
-// Route::view('/sejarah1', 'landing.sejarah');
-// Route::view('/struktur1', 'landing.struktur');
-// Route::view('/komunitas1', 'landing.komunitas');
-// Route::view('/kerjasama1', 'landing.kerjasama');
-
 //LOGIN === REGISTER
 Auth::routes();
 Route::get('/register', [App\Http\Controllers\Auth\RegisterController::class, 'create']);

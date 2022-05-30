@@ -56,10 +56,10 @@ class LoginController extends Controller
             {
                 return redirect()->route('user_view');
             } else {
-                return redirect()->route('/');
+                return redirect('logout');
             }
         } else {
-            return redirect()->route('/')->with('error','email dan password salah');
+            return redirect('logout')->with('error','email dan password salah');
         }
     }
 

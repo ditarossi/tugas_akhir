@@ -69,7 +69,25 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias earum provident blanditiis quaerat quibusdam, molestiae, architecto, vel repellendus placeat nemo excepturi. Odio a in maxime, cupiditate ipsum vero nesciunt voluptates.</p>
+                <p>Pusur Institute adalah wadah kolaborasi parapihak yang memiliki kepedulian terhadap pelestarian sungai Pusur. 
+                  Penggunaan istilah institute adalah untuk memfokuskan wadah yang khusus bergerak dalam pelestarian sungai pusur.
+                  Kesamaan Misi dari parapihak  yg bergiat. Semua pihak memiliki aktifitas yang bermuara terhadap pelestarian sungai Pusur.
+                </p>
+                <br>
+                <p>
+                  Kegiatan Beragam dari Hulu ke Hilir  dan masih  parsial:  
+                    <li>1. Konservasi hulu </li>
+                    <li>2. Bank Sampah </li>
+                    <li>3. Pertanian ramah lingkungan </li>
+                    <li>4. River care/RTPA </li>
+                    <li>5. Kampung energi </li>
+                    <li>6. Sanitasi </li>
+                </p>
+                <br>
+                <p>
+                  5 tahun, sejak 2012 Fokus kegiatan Ke badan Sungai (Grebeg Sungai) & Kegiatan di sempadan sungai seperti pertanian ramah lingkungan, bank sampah, penelitian penyadartahuan, & konservasi di Hulu
+                  13 Februari 2016, “Grebeg Sungai”  inisiatif Pemerintah Kec. Polanharjo sebagai momentum aksi kolektif.“ dan dimulainya cikal bakal PUSUR INSTITUTE
+                </p>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -99,7 +117,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nobis accusantium recusandae quidem quaerat, magnam a delectus debitis, consectetur, ea incidunt quisquam architecto tempora nostrum. Ullam ad rerum minima exercitationem.</p>
+                <img src="{{asset('layout')}}/assets/images/Picture1.png" alt="">
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -129,7 +147,40 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati perspiciatis magni ad voluptatem laudantium, nostrum iure sunt dolores ducimus, accusantium at architecto possimus, similique ut quidem ea odio. Provident, consequuntur.</p>
+                <h6>1. Program Kali Bersih melalui Pengelolaan Sampah Terpadu di 4 Desa</h6>
+                <p>
+                  Melalui program ini sudah terbentuk 7 bank sampah, dengan nasabah yang sudah mencapai sekitar kurang lebih 480 nasabah
+                  Kegiatan yang dilakukan berupa penampungan sampah, pemilahan sampah, kreasi daur ulang, promosi produk daur ulang, 
+                  kampanye penyadartahuan, capacity building dan grebeg kali pusur.
+                </p>
+                <br>
+                <h6>2. Program River Care melalui Pengembangan Wisata Tubing </h6>
+                <p>
+                  Program ini berawal dari inisiatif 10 pemuda pada tahun 2012, yang pada saat ini sudah memiliki 35 anggota.
+                  Kegiatan utama yang dilakukan adalah melakukan pelestarian ungai Pusur dengan pengelolaan wisata tubing.
+                  Adapun pemeliharaan rutin yang dilakukan antara lain menjadikan jalur tubing dengan bersih sampah, 
+                  penataan jalur/track, penataan bantaran sungai, melibatkan dampak ekonomi bagi ibu-ibu sekitar bantaran 
+                  sungai dengan dukungan snack/rebusan untuk tamu wisata.
+                </p>
+                <br>
+                <h6>3. Sekolah Lapang Petani/Pusat Pendidikan Pertanian</h6>
+                <p>
+                  Merupakan kegiatan yang dilakukan sebagai sarana belajar petani yang meliputi 2 pusat pelatihan/lab lapang pertanian.
+                  Tujuan kegiatan ini adalah menciptakan kader petani yang unggul dengan begini maka polutan sungai akibat kegiatan pertanian bisa berkurang.
+                </p>
+                <br>
+                <h6>4. Gabungan Perkumpulan Petani Pemakai Air (GP3A) DI Plosowareng</h6>
+                <p>
+                  Merupakan komunitas yang memiliki tugas untuk membagi air ketika musim kemarau datang yang meliputi
+                  kontrol dan monitoring drainase primer, skunder dan tersier.
+                  Komunitas ini berfokus pada pengelolaan daerah irigasi (DI) Plosowareng dengan luas 1100 ha.
+                </p>
+                <br>
+                <h6>5. Observasi dan Transek Sungai Pusur</h6>
+                <p>
+                  Kegiatan yang dilakukan berupa observasi potensi dan peluang Sungai Pusur, dengan melibatkan variable sungat antara lain
+                  sampah, potensi bencana, vegetasi/biota, dan sosial.
+                </p>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -142,9 +193,11 @@
         <div class="col-lg-3">
           <div class="service-item fourth-service">
             <div class="icon"></div>
-            <h4>Kerjasama</h4>
-            <p>Lorem ipsum dolor consectetur adipiscing elit sedder williamsburg photo booth quinoa and fashion axe.
-            williamsburg photo booth quinoa and fashion axe.</p>
+            <h4>Sumber Daya</h4>
+            <p>
+              Pusur Institute merupakan kelembagaan yang mewadahi para pemerhati kelestarian sub DAS Pusur dimana sumberdaya 
+              yang dikontribusikan bersifat kesukarelawanan (voluntary)
+            </p>
             <div class="text-button">
               <a data-bs-toggle="modal" data-bs-target="#showkerjasama">Read More <i class="fa fa-arrow-right"></i></a>
             </div>
@@ -159,7 +212,13 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt incidunt odio consectetur corporis! Sunt molestiae laboriosam mollitia dicta ex aspernatur nihil harum illum, repellat maiores commodi perferendis, accusamus aliquid ad.</p>
+                <ul>
+                  <li>1. Pemerintah Kecamatan POLANHARJO memberikan dukungan kantor kesekretariatan Pusur Institute</li>
+                  <li>2. Pemerintah desa terkait memberikan dukungan penataan ruang dan support terhadap komunitas melalui pembiayaan desa dan fasilitas desa</li>
+                  <li>3. Lembaga Swadaya Masyarakat, memfasilitasi program-program tematik di sepanjang rivarian sub-DAS Pusur dan juga mengembangkan upaya-upaya kemitraan dengan pemerintah terkait baik pemerintah kabupaten Klaten, Boyolali, Provinsi Jawa Tengah dan pemerintah pusat</li>
+                  <li>4. PT. Tirta Investama (DANONE Group) mendukung berbagai skema kegiatan terkait pengelolaan Kawasan sub-DAS Pusur melalui skema pendanaan tanggung jawab social dan lingkungan perusahaan (CSR)</li>
+                  <li>5. Komunitas peduli sungai telah berproses menuju kemandirian keuangan sehingga upaya-upaya pelestarian sungai Pusur melalui kegiatan fisik seperti bersih sungai, penghijauan, penataan areal dilakukan melalui kas masing-masing komunitas sungai</li>
+                </ul>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
